@@ -8,8 +8,7 @@
   	<header class="main-header">
   		<div class="main-header-top">
         <a href="index.html" class="main-header-logo">ТЕХНОМАРТ</a>
-  		  <p class="main-search">Поиск:</p>
-  		  <!--Здесь будет форма поиска -->
+  		  <input  class="main-search" type="search" name="search" placeholder="Поиск">
   		  <a href="#" class="main-bookmark">
   		  	Закладки: <span>0</span>
   	   	</a>
@@ -46,12 +45,50 @@
   		</ul>
   		<h1>Перфораторы</h1>
   		<section>
-  			<h2 class="visually-hidden">Фильтр товаров</h2>
-  			<!-- Здесь будет форма фильтра товаров -->
-  		</section>
+        <form>
+  			  <h2 class="products-filter">Фильтр:</h2>
+          <section>          
+            <h3>Цена:</h3>
+            <!-- Здесь будет форма фильтра по цене -->
+          </section>
+          <section>
+            <h3>Производители:</h3>
+            <label>
+              <input type="checkbox" name="filter-brand">Bosch
+            </label>
+            <label>
+              <input type="checkbox" name="filter-interskol">Интерскол
+            </label>
+            <label>
+              <input type="checkbox" name="filter-makita">Makita
+            </label>
+            <label>
+              <input type="checkbox" name="filter-dewalt">DeWALT
+            </label>
+            <label>
+              <input type="checkbox" name="filter-hitachi">Hitachi
+            </label>
+          </section>  
+          <section>
+            <label>
+              <input type="radio" name="type-product" value="a" checked>Аккумуляторные
+            </label>
+            <label>
+              <input type="radio" name="type-product" value="b">Сетевые
+            </label>
+          </section>
+          <input type="submit" value="Показать">		
+  		  </section>
+      </form>
   		<section>
-  			<h2 class="visually-hidden">Сортировка товаров</h2>
-  			<!-- Здесь будет форма сортировки товаров -->
+  			<h2 class="visually-hidden">Сортировка:</h2>
+  			<p>
+          <a class="sorting-active">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По функционалу</a>
+          <a class="sorting-active">По возрастанию</a>
+          <a href="#">По убыванию</a>
+        </p>
   		</section>
   		<section>
   			<ul class="product-catalog">
@@ -189,7 +226,7 @@
   		</section>
   	</main>
 	<footer>
-        <a class="main-header-logo">ТЕХНОМАРТ</a>
+        <a class="main-header-logo" href="index.html">ТЕХНОМАРТ</a>
         <p class="main-contacts">г.Санкт-Петербург, ул.Конюшенная, д.19/8 +7(812)555-05-55</p>
         <ul class="footer-navigation">
           <li><a class="site-navigation-current">Главная</a></li>
