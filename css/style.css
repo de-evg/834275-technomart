@@ -16,6 +16,14 @@ a {
   text-decoration: none;
 }
 
+.serices-title,
+.about-company-title,
+.contacts-title {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+
 .main-header {
   background-color: #f3f7f9;
 }
@@ -122,4 +130,77 @@ a {
 
 .main-navigation a:focus {
   color: rgba(255, 255, 255, 50%);
+}
+
+.about-company p,
+.contacts p {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.about-company li {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.about-company .button,
+.contacts .button {
+  background-color: #ee3643;
+
+  text-transform: uppercase;
+}
+
+.about-company .button:hover,
+.contacts .button:hover {
+  background-color: #ca2c37;
+}
+
+.about-company .button:focus,
+.contacts .button:focus {
+  background-color: #ba2732;
+}
+
+footer {
+  background-color: #32425c;
+  color: #ffffff;
+}
+
+.main-contacts {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-navigation-item {
+  list-style: none;
+
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-navigation-item:nth-of-type(n+6) a,
+.feedback a,
+.site-developed a {
+  color: #ffd180;
+}
+
+.footer-copyright {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.social-list li {
+  list-style: none;
+}
+
+.social-button {
+  background-color: #212a3a;
+}
+
+.feedback,
+.feedback a,
+.site-developed,
+.site-developed a {
+  font-size: 16px;
+  line-height: 18px;
 }
