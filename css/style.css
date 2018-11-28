@@ -33,8 +33,7 @@ a {
 }
 
 .main-header-logo img {
-  filter: red; 
-  padding: 21px 41px;
+  padding: 13px 55px 12px;
   background-color: #ee3643;
   border-bottom: 5px solid #b52933;
 }
@@ -66,16 +65,19 @@ a {
    line-height: 18px;
    color: #ffffff;
 }
+
 .search-form input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    font-size: 17px;
    line-height: 18px;
    color: #ffffff;
 }
+
 .search-form input::-moz-placeholder { /* Mozilla Firefox 19+ */
    font-size: 17px;
    line-height: 18px;   
    color: #ffffff;
 }
+
 .search-form input:-ms-input-placeholder { /* Internet Explorer 10+ */
    font-size: 17px;
    line-height: 18px;   
@@ -106,6 +108,10 @@ a {
 .main-kart:hover,
 .main-order:hover {
   color: rgba(255, 255, 255, 50%);
+}
+
+.item-in-kart {
+  background-color: #ee3643;
 }
 
 .main-order {
@@ -140,9 +146,22 @@ a {
   color: #e9292a;
 }
 
+.user-login {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 21px; 
+}
+
 .user-navigation li,
 .main-navigation li {
   list-style: none;
+}
+
+.user-navigation .in-account {
+  font-size: 16px;
+  line-height: 18px; 
+  color: #32425c;
+  text-decoration: underline;
 }
 
 .user-navigation a {
@@ -176,6 +195,46 @@ a {
   color: rgba(255, 255, 255, 50%);
 }
 
+.breadcrumds li {
+  list-style: none;
+}
+
+.breadcrumds a,
+.breadcrumbs-current {
+  line-height: 18px;
+  color: #000000;
+}
+
+.catalog-title {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+
+  background-color: #f3f7f9;
+}
+
+.brands-filter legend,
+.type-filter legend {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.brands-filter label,
+.type-filter label {
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.filter button {
+  font-size: 13px;
+  line-height: 18px;
+  background-color: transparent; 
+  border: 1px solid #e5e5e5;
+}
+
 .about-company p,
 .contacts p {
   font-size: 13px;
@@ -183,8 +242,10 @@ a {
 }
 
 .about-company li {
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
+  list-style: none;
 }
 
 .about-company .button,
@@ -228,10 +289,13 @@ a {
   height: 110px;
 }
 
-
 footer {
   background-color: #32425c;
   color: #ffffff;
+}
+
+.footer-bottom {
+  background-color: #293449;
 }
 
 .footer-contacts {
@@ -295,3 +359,21 @@ footer {
   line-height: 18px;
 }
 
+/*Стили для карточек товаров в каталоге*/
+.product-catalog li {
+  list-style: none;
+}
+
+.catalog-item h3 {
+  text-align: center;
+}
+
+.catalog-item-title {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;  
+}
+
+.catalog-item-image {
+  text-align: center;
+}
