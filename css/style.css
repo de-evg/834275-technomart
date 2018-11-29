@@ -48,7 +48,7 @@ a {
   border-color: #8e1e26;
 }
 
-.search-form input {  
+.search-form input {
   font-family: "Cuprum", "Arial", sans-serif;
 
   width: 220px;
@@ -74,13 +74,13 @@ a {
 
 .search-form input::-moz-placeholder { /* Mozilla Firefox 19+ */
    font-size: 17px;
-   line-height: 18px;   
+   line-height: 18px;
    color: #ffffff;
 }
 
 .search-form input:-ms-input-placeholder { /* Internet Explorer 10+ */
    font-size: 17px;
-   line-height: 18px;   
+   line-height: 18px;
    color: #ffffff;
 }
 
@@ -149,7 +149,7 @@ a {
 .user-login {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
-  line-height: 21px; 
+  line-height: 21px;
 }
 
 .user-navigation li,
@@ -159,7 +159,7 @@ a {
 
 .user-navigation .in-account {
   font-size: 16px;
-  line-height: 18px; 
+  line-height: 18px;
   color: #32425c;
   text-decoration: underline;
 }
@@ -183,7 +183,7 @@ a {
  font-family: "Cuprum", "Arial", sans-serif;
  font-size: 17px;
  line-height: 17px;
- 
+
  background-color: #32425c;
 }
 
@@ -231,7 +231,7 @@ a {
 .filter button {
   font-size: 13px;
   line-height: 18px;
-  background-color: transparent; 
+  background-color: transparent;
   border: 1px solid #e5e5e5;
 }
 
@@ -371,9 +371,59 @@ footer {
 .catalog-item-title {
   font-size: 18px;
   line-height: 20px;
-  color: #000000;  
+  color: #000000;
 }
 
 .catalog-item-image {
+  text-align: center;
+}
+
+.buy-item {
+  text-align: center;
+}
+
+.button-buy {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #63a63e;
+  text-align: center;
+  border: 3px solid #63a63e;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 0 #367315;
+}
+
+.button-bookmark {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425c;
+  border: 3px solid #63a63e;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.old-price {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #999999;
+  text-align: center;
+  text-decoration: line-through;
+}
+
+.price {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #ee3643;
+  text-align: center;
+}
+
+.new-item {
+  color: #ffffff;
+  background-color: #ee3643;
   text-align: center;
 }
