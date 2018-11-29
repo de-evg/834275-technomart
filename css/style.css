@@ -393,6 +393,17 @@ footer {
   box-shadow: 0 1px 0 0 #367315;
 }
 
+.button-buy:hover {
+  background-color: #5fbb2d;
+  border-color: #5fbb2d;
+  }
+
+.button-buy:focus {
+  background-color: #518534;
+  border-color: #518534;
+  box-shadow: 0 1px 0 0 #518534;
+  }
+
 .button-bookmark {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
@@ -401,6 +412,15 @@ footer {
   border: 3px solid #63a63e;
   border-radius: 2px;
   text-align: center;
+}
+
+.button-bookmark:hover {
+  border-color: #32425c;
+}
+
+.button-bookmark:focus {
+  border-color: rgba(50, 66, 92, 30%);
+  color: rgba(50, 66, 92, 30%);
 }
 
 .old-price {
