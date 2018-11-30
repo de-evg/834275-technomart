@@ -51,7 +51,7 @@ a {
 .search-form input {
   font-family: "Cuprum", "Arial", sans-serif;
 
-  width: 220px;
+  width: 215px;
   height: 20px;
   border: none;
   background-color: transparent;
@@ -91,9 +91,11 @@ a {
 }
 
 .search-form button {
-  background-color: transparent;
+  background-color: #ffffff;
   border: none;
-  color: #ffffff;
+  width: 17px;
+  height: 17px;
+  margin-right: 7px;
 }
 
 .main-bookmark,
@@ -129,6 +131,7 @@ a {
 .main-title {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
+  font-style: italic;
   line-height: 23px;
   color: #ee3643;
 }
@@ -183,8 +186,6 @@ a {
  font-family: "Cuprum", "Arial", sans-serif;
  font-size: 17px;
  line-height: 17px;
-
- background-color: #32425c;
 }
 
 .main-navigation a:hover {
@@ -447,3 +448,91 @@ footer {
   background-color: #ee3643;
   text-align: center;
 }
+
+/*Стили сетки*/
+.wrapper {
+  width: 100%;
+  background-color: #293449;
+  margin-bottom: 41px;
+}
+
+.container {
+ /* background-color: rgba(255, 0, 0, 0.3);*/
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header-top {
+  /*background-color: rgba(0, 255, 0, 0.2);*/
+  display: flex;
+}
+
+.main-header-logo {
+  margin-right: 10px;
+  height: 42px;
+}
+
+.search-form {
+  width: 245px;
+  margin-right: 10px;
+  height: 42px;
+  vertical-align: middle;
+}
+
+.main-bookmark,
+.main-kart {
+  width: 150px;
+  padding: 10px 0 14px;
+
+  text-align: center;
+}
+
+.main-bookmark{
+  margin-left: auto;
+}
+
+.main-bookmark:focus,
+.main-kart:focus {
+  background-color: #212a3a;
+}
+
+.main-order  {
+  padding: 10px 22px 14px;
+}
+
+.main-header-middle {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.main-header-middle h1,
+.main-header-middle p,
+.main-header-middle ul {
+  margin: 0;
+  padding: 0;
+  width: 310px;
+}
+
+.main-navigation {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main-navigation a {
+  background-color: #32425c;
+  padding-top: 20px;
+  padding-bottom: 18px;
+  border-bottom: 5px solid #293449;
+  text-align: center;
+}
+
+

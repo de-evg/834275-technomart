@@ -10,27 +10,31 @@
   </head>
   <body>
   	<header class="main-header">
-  		<div class="main-header-top">
-        <a class="main-header-logo"><img src="img/logo.svg" width="110" height="17" alt="Логотип интернет-магазина &ldquo;Техномарт&rdquo;"></a>
-        <form class="search-form" action="#" method="post">
-          <button type="submit" name="search-button">Найти</button>
-  		    <input  class="main-search" type="search" name="search" placeholder="Поиск" aria-label=" Поиск по сайту">
-  		  </form>
-  		  <a href="#" class="main-bookmark">
-  		  	Закладки: <span>0</span>
-  	   	</a>
-  		  <a href="#" class="main-kart">
-  		  	Корзина: <span>0</span>
-  		  </a>
-  		  <a class="main-order" href="#">Оформить заказ</a>
+  		<div class="wrapper">
+        <div class="main-header-top container">
+          <a class="main-header-logo"><img src="img/logo.svg" width="110" height="17" alt="Логотип интернет-магазина &ldquo;Техномарт&rdquo;"></a>
+          <form class="search-form" action="#" method="post">
+            <button type="submit" name="search-button" aria-label="Найти"></button>
+    		    <input  class="main-search" type="search" name="search" placeholder="Поиск" aria-label=" Поиск по сайту">
+    		  </form>
+    		  <a href="#" class="main-bookmark">
+    		  	Закладки: <span>0</span>
+    	   	</a>
+    		  <a href="#" class="main-kart">
+    		  	Корзина: <span>0</span>
+    		  </a>
+    		  <a class="main-order" href="#">Оформить заказ</a>
+        </div>
       </div>
-      <h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <p class="main-contacts"><span>+7(812)555-05-55</span> г.Санкт-Петербург, ул.Конюшенная, д.19/8</p>
-      <ul class="user-navigation" aria-label="Меню личного кабинета">
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Регистрация</a></li>
-      </ul>
-      <nav>
+      <div class="main-header-middle container">
+        <h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <p class="main-contacts"><span>+7(812)555-05-55</span> г.Санкт-Петербург, ул.Конюшенная, д.19/8</p>
+        <ul class="user-navigation" aria-label="Меню личного кабинета">
+          <li><a href="#">Войти</a></li>
+          <li><a href="#">Регистрация</a></li>
+        </ul>
+      </div>
+      <nav class="container">
         <ul class="main-navigation" aria-label="Навигация по сайту">
           <li aria-label="Текущая страница"><a class="site-navigation-current" >Главная</a></li>
           <li><a href="#">Компания</a></li>
@@ -255,9 +259,7 @@
 
         <section class="modal modal-map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
-          <p>
-            <img src="img/content/map-modal.png" width="940" height="446" alt="Магазин расположен по адресу: г.Санкт-Петербург, ул.Конюшенная, д.19/8">
-          </p>
+          <img src="img/content/map-modal.png" width="940" height="446" alt="Магазин расположен по адресу: г.Санкт-Петербург, ул.Конюшенная, д.19/8">
           <button class="modal-close" type="button">Закрыть</button>
         </section>
 
