@@ -340,9 +340,7 @@ a {
   width: 220px;
 }
 
-.price-filter,
-.brands-filter {
-  display: flex;
+.filter-item-container {
   border: 0;
   border-bottom: 1px solid #e5e5e5;
   padding: 0;
@@ -350,15 +348,20 @@ a {
   margin-bottom: 23px;
 }
 
-.type-filter {
-  display: flex;
-  border: 0;
+.filter .filter-item-container:last-of-type {
   border-bottom: 0;
-  padding: 0;
   padding-bottom: 0;
   margin-bottom: 75px;
 }
 
+.price-filter,
+.brands-filter,
+.type-filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-filter legend,
 .brands-filter legend,
 .type-filter legend {
   font-weight: 700;

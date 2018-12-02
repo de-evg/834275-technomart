@@ -62,46 +62,52 @@
     		<section>
           <form class="filter" action="#" method="post">
     			  <h2 class="products-filter">Фильтр:</h2>
-            <fieldset class="price-filter">
-              <legend>Цена:</legend>
-              <div>
-                <p>
-                  <button aria-label="Минимальная цена">Минимальная цена</button>
-                  <button aria-label="Максимальная цена">Максимальная цена</button>
-                  <input type="text" name="scale" tabindex="-1">
-                </p>
-                <label class="visually-hidden" for="min-price">Поле ввода минимальной цены</label>
-                <input id="min-price" type="text" name="min-value" placeholder="0">
-                <label class="visually-hidden" for="max-price">Поле ввода максимальной цены</label>
-                <input id="max-price" type="text" name="max-value" placeholder="40000">
+            <fieldset class="filter-item-container">
+              <div class="price-filter">
+                <legend>Цена:</legend>
+                <div>
+                  <p>
+                    <button aria-label="Минимальная цена">Минимальная цена</button>
+                    <button aria-label="Максимальная цена">Максимальная цена</button>
+                    <input type="text" name="scale" tabindex="-1">
+                  </p>
+                  <label class="visually-hidden" for="min-price">Поле ввода минимальной цены</label>
+                  <input id="min-price" type="text" name="min-value" placeholder="0">
+                  <label class="visually-hidden" for="max-price">Поле ввода максимальной цены</label>
+                  <input id="max-price" type="text" name="max-value" placeholder="40000">
+                </div>
               </div>
             </fieldset>
-            <fieldset class="brands-filter">
-              <legend>Производители:</legend>
-              <label>
-                <input type="checkbox" name="filter-bosch">Bosch
-              </label>
-              <label>
-                <input type="checkbox" name="filter-interskol">Интерскол
-              </label>
-              <label>
-                <input type="checkbox" name="filter-makita">Makita
-              </label>
-              <label>
-                <input type="checkbox" name="filter-dewalt">DeWALT
-              </label>
-              <label>
-                <input type="checkbox" name="filter-hitachi">Hitachi
-              </label>
+            <fieldset class="filter-item-container">
+              <div class="brands-filter">
+                <legend>Производители:</legend>
+                <label>
+                  <input type="checkbox" name="filter-bosch">Bosch
+                </label>
+                <label>
+                  <input type="checkbox" name="filter-interskol">Интерскол
+                </label>
+                <label>
+                  <input type="checkbox" name="filter-makita">Makita
+                </label>
+                <label>
+                  <input type="checkbox" name="filter-dewalt">DeWALT
+                </label>
+                <label>
+                  <input type="checkbox" name="filter-hitachi">Hitachi
+                </label>
+              </div>
             </fieldset>
-            <fieldset class="type-filter">
-              <legend>Питание:</legend>
-              <label>
-                <input type="radio" name="type-product" value="a" checked>Аккумуляторные
-              </label>
-              <label>
-                <input type="radio" name="type-product" value="b">Сетевые
-              </label>
+            <fieldset class="filter-item-container">
+              <div class="type-filter">
+                <legend>Питание:</legend>
+                <label>
+                  <input type="radio" name="type-product" value="a" checked>Аккумуляторные
+                </label>
+                <label>
+                  <input type="radio" name="type-product" value="b">Сетевые
+                </label>
+              </div>
             </fieldset>
             <button class="button filter-button" type="submit">Показать</button>
           </form>
