@@ -1103,5 +1103,31 @@ footer .wrapper {
   background-color: #ba2732;
 }
 
+/*POPUP Map*/
+/*.modal {
+  display: none;
+}*/
 
+.modal-map {
+  position: relative;
+}
+.modal-map img {
 
+  box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.5);
+}
+
+.modal-close {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  background-image: url("../img/icon/icon-close.svg");
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.modal-map .modal-close {
+  position: absolute;
+  content: "";
+  top: 8px;
+  right: 8px;
+}
