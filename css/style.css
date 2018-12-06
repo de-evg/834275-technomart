@@ -141,10 +141,6 @@ a {
   color: #000000;
 }
 
-.search-form input:focus ~ .search-button {
-  fill:
-}
-
 .search-form button {
   position: absolute;
   left: 17px;
@@ -326,16 +322,55 @@ a {
   padding-left: 23px;
 }
 
-.user-login {
+.user-name {
+  position: relative;
   margin: 0;
+  margin-bottom: 2px;
+  padding: 13px 70px 14px 13px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   line-height: 21px;
+  background-color: #ffffff;
+}
+
+.user-name svg {
+  margin-right: 14px;
+  vertical-align: bottom;
+}
+
+.user-name path {
+  fill: #32425c;
+}
+
+.user-logout:hover path,
+.user-logout:focus path {
+  fill: #c5c5c5;
+}
+
+
+.user-logout {
+  position: absolute;
+  width: 20px;
+  height: 17px;
+  right: 10px;
+}
+
+.user-navigation-in {
+  padding: 0 20px;
 }
 
 .user-navigation li,
 .main-navigation li {
   list-style: none;
+}
+
+.user-navigation-in li:first-child {
+  margin-right: 28px;
+}
+
+.user-navigation-in li:last-child {
+  list-style: disc;
+  padding-left: 4px;
 }
 
 .user-navigation .in-account {
@@ -411,16 +446,24 @@ a {
 .breadcrumbs {
   display: flex;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   padding: 0;
-  padding-top: 20px;
+  padding-top: 16px;
 
 }
 
 .breadcrumbs li {
   position: relative;
   list-style: none;
-  margin-right: 54px;
+  margin-right: 56px;
+}
+
+.breadcrumbs li:nth-child(2) {
+  margin-right: 40px;
+}
+
+.breadcrumbs li:nth-child(3) {
+  margin-right: 33px;
 }
 
 .breadcrumbs li:nth-of-type(n+2):before {
@@ -429,12 +472,12 @@ a {
   width: 8px;
   height: 12px;
   top: 5px;
-  left: -23px;
+  left: -27px;
   background-image: url("../img/icon/icon-breadcrumds.svg");
 }
 
 .breadcrumbs li:nth-of-type(n+3):before {
-  left: -30px;
+  left: -24px;
 }
 
 .breadcrumbs a,
@@ -456,6 +499,7 @@ a {
   width: 14px;
   height: 12px;
   left: -1px;
+  top: -11px;
   bottom: 0;
   background-image: url("../img/icon/icon-home.svg");
   background-repeat: no-repeat;
@@ -469,7 +513,7 @@ a {
 /*Заголовок каталога*/
 .catalog-title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding: 30px 30px;
 
   font-family: "Cuprum", "Arial", sans-serif;
@@ -489,7 +533,7 @@ a {
 
 .products-filter {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 11px 18px;
   font-weight: 400;
   font-size: 13px;
@@ -508,6 +552,11 @@ a {
   margin-bottom: 23px;
 }
 
+.filter .filter-item-container:first-of-type {
+  padding-bottom: 62px;
+  margin-bottom: 16px;
+}
+
 .filter .filter-item-container:last-of-type {
   border-bottom: 0;
   padding-bottom: 0;
@@ -524,31 +573,20 @@ a {
 .brands-filter legend,
 .type-filter legend {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.price-filter {
+.type-filter legend {
+  margin-bottom: 12px;
+}
+
+.price-range-filter {
   background-color: #f7f3ec;
-
 }
-
-.min-price-button,
-.max-price-button {
-  display: inline-block;
-  box-sizing: border-box;
-  border-width: 8px;
-  padding: 0;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ababab;
-
-}
-
 
 .brands-filter input,
 .type-filter input {
@@ -562,7 +600,11 @@ a {
   font-size: 15px;
   line-height: 20px;
   text-transform: uppercase;
-  margin-bottom: 17px;
+  margin-bottom: 19px;
+}
+
+.type-filter label {
+  margin-bottom: 20px;
 }
 
 .brands-filter-checkbox + label::before {
@@ -892,6 +934,7 @@ footer .wrapper {
   margin-bottom: 52px;
   padding: 0;
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
 }
 
@@ -952,6 +995,7 @@ footer .wrapper {
 }
 
 .buy-item {
+  display: none;
   margin: 0;
   position: absolute;
   width: 135px;
@@ -965,6 +1009,7 @@ footer .wrapper {
 }
 
 .catalog-item:hover .buy-item {
+  display: block;
   z-index: 21;
 }
 
