@@ -469,19 +469,35 @@ a {
 /*Заголовок каталога*/
 .catalog-title {
   margin: 0;
-  margin-bottom: 65px;
+  margin-bottom: 20px;
+  padding: 30px 30px;
 
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
   color: #32425c;
 
   background-color: #f3f7f9;
 }
 
 /*Фильтр*/
+
 .filter {
   width: 220px;
+}
+
+.products-filter {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 11px 18px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  background-color: #f7f3ec;
+  border-radius: 3px;
 }
 
 .filter-item-container {
@@ -498,7 +514,6 @@ a {
   margin-bottom: 75px;
 }
 
-.price-filter,
 .brands-filter,
 .type-filter {
   display: flex;
@@ -508,17 +523,88 @@ a {
 .price-filter legend,
 .brands-filter legend,
 .type-filter legend {
+  margin: 0;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
+  text-transform: uppercase;
+}
+
+.price-filter {
+  background-color: #f7f3ec;
+
+}
+
+.min-price-button,
+.max-price-button {
+  display: inline-block;
+  box-sizing: border-box;
+  border-width: 8px;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ababab;
+
+}
+
+
+.brands-filter input,
+.type-filter input {
+  display: none;
 }
 
 .brands-filter label,
 .type-filter label {
+  position: relative;
+  padding-left: 35px;
   font-size: 15px;
   line-height: 20px;
   text-transform: uppercase;
   margin-bottom: 17px;
+}
+
+.brands-filter-checkbox + label::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/icon/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.7;
+}
+
+.brands-filter-checkbox + label:hover::before,
+.type-filter-radio + label:hover::before {
+  opacity: 1;
+}
+
+.brands-filter-checkbox:checked + label::before {
+  width: 27px;
+  background-image: url("../img/icon/checkbox-on.svg");
+}
+
+.type-filter-radio:disabled + label::before {
+  opacity: 0.3;
+}
+
+.type-filter-radio + label::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/icon/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.7;
+}
+
+.type-filter-radio:checked + label::before {
+  background-image: url("../img/icon/radio-on.svg");
 }
 
 .brands-filter label:nth-last-of-type(1),
@@ -526,13 +612,30 @@ a {
     margin-bottom: 0;
 }
 
-.filter button {
+.filter-button {
   font-size: 13px;
   line-height: 18px;
   background-color: transparent;
+  text-transform: uppercase;
+
+  margin: 0;
+  padding: 12px 38px;
   border: 1px solid #e5e5e5;
+  border-radius: 3px;
 }
 
+.filter-button:hover {
+
+}
+
+/*О перфораторах!!!!!!!!!!!!!!!!!!!!!проверить шрифт!!!!!!!!*/
+.about-product-title {
+  margin: 0;
+  padding: 0;
+
+}
+
+/*POPUP write us*/
 .modal-message label {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
@@ -793,26 +896,38 @@ footer .wrapper {
 }
 
 .product-catalog .catalog-item {
-    flex-basis: 220px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+  position: relative;
+  width: 218px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-top: 180px;
+  padding-bottom: 20px;
 }
+
+.product-catalog .catalog-item:hover {
+  box-shadow: 0 10px 25px #293449;
+}
+
 .product-catalog .catalog-item:nth-last-of-type(1),
 .product-catalog .catalog-item:nth-last-of-type(2),
 .product-catalog .catalog-item:nth-last-of-type(3) {
   margin-bottom: 0;
 }
 
-.product-catalog .catalog-item:nth-last-of-type(1) {
+.product-catalog .catalog-item:nth-of-type(3n) {
   margin-right: 0;
 }
 
-.product-catalog li {
+.catalog-item {
+  text-align: center;
   list-style: none;
+  border: 1px solid #f6f6f6;
 }
 
 .catalog-item h3 {
-  text-align: center;
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0 25px;
 }
 
 .catalog-item-title {
@@ -822,14 +937,39 @@ footer .wrapper {
 }
 
 .catalog-item-image {
+  margin: 0;
+  position: absolute;
+  width: 218px;
+  top: 42px;
+  left: 0;
   text-align: center;
+  background-color: #ffffff;
+  z-index: 20;
+}
+
+.catalog-item-image img {
+  max-width: 100%;
 }
 
 .buy-item {
+  margin: 0;
+  position: absolute;
+  width: 135px;
+  top: 43px;
+  left: 41px;
   text-align: center;
 }
 
+.catalog-item:hover .catalog-item-image {
+  opacity: 0;
+}
+
+.catalog-item:hover .buy-item {
+  z-index: 21;
+}
+
 .button-buy {
+  display: block;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -838,6 +978,7 @@ footer .wrapper {
   border: 3px solid #63a63e;
   border-radius: 3px;
   box-shadow: 0 1px 0 0 #367315;
+  margin-bottom: 8px;
 }
 
 .button-buy:hover {
@@ -852,6 +993,7 @@ footer .wrapper {
   }
 
 .button-bookmark {
+  display: block;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -871,6 +1013,8 @@ footer .wrapper {
 }
 
 .old-price {
+  margin: 0;
+  margin-bottom: 10px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -879,7 +1023,18 @@ footer .wrapper {
   text-decoration: line-through;
 }
 
+.catalog-item .no-discount {
+  margin-bottom: 42px;
+}
+
 .price {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 36px;
+  padding-right: 25px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -889,10 +1044,27 @@ footer .wrapper {
   text-align: center;
 }
 
+.price::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -38px;
+  border: 19px solid transparent;
+  border-left-color: #ee3643;
+}
+
 .new-item {
-  color: #ffffff;
-  background-color: #ee3643;
-  text-align: center;
+  margin: 0;
+  font-size: 0;
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  top: 0;
+  right: 0;
+  background-image: url("../img/decor/new-item.png");
+  background-repeat: no-repeat;
+  z-index: 23;
 }
 
 /*Меню пагинации*/
@@ -1122,10 +1294,6 @@ footer .wrapper {
 .popular-brands-item img {
   display: block;
   border: 1px solid #eaeaea;
-}
-
-.popular-brands-item img {
- /* padding: 53px 46px;*/
 }
 
 /*Главная: сервисы, о компании, контакты*/
