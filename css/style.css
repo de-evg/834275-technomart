@@ -1093,7 +1093,8 @@ footer .wrapper {
   flex-wrap: wrap;
 }
 
-.product-catalog .catalog-item {
+.catalog-item,
+.popular-product-item {
   position: relative;
   width: 218px;
   margin-right: 20px;
@@ -1102,27 +1103,32 @@ footer .wrapper {
   padding-bottom: 20px;
 }
 
-.product-catalog .catalog-item:hover {
+.catalog-item:hover,
+.popular-product-item:hover {
   box-shadow: 0 10px 25px #293449;
 }
 
-.product-catalog .catalog-item:nth-last-of-type(1),
-.product-catalog .catalog-item:nth-last-of-type(2),
-.product-catalog .catalog-item:nth-last-of-type(3) {
+.catalog-item:nth-last-of-type(1),
+.catalog-item:nth-last-of-type(2),
+.catalog-item:nth-last-of-type(3),
+.popular-product-item {
   margin-bottom: 0;
 }
 
-.product-catalog .catalog-item:nth-of-type(3n) {
+.product-catalog .catalog-item:nth-of-type(3n),
+.popular-product-item:last-child {
   margin-right: 0;
 }
 
-.catalog-item {
+.catalog-item,
+.popular-product-item {
   text-align: center;
   list-style: none;
   border: 1px solid #f6f6f6;
 }
 
-.catalog-item h3 {
+.catalog-item h3,
+.popular-product-item h3 {
   margin: 0;
   margin-bottom: 3px;
   padding: 0 25px;
@@ -1159,13 +1165,15 @@ footer .wrapper {
   text-align: center;
 }
 
-.catalog-item:hover .catalog-item-image {
+.catalog-item:hover .catalog-item-image,
+.popular-product-item:hover .catalog-item-image {
   opacity: 0;
 }
 
-.catalog-item:hover .buy-item {
+.catalog-item:hover .buy-item,
+.popular-product-item:hover .buy-item {
   display: block;
-  z-index: 21;
+  z-index: 29;
 }
 
 .button-buy {
@@ -1223,7 +1231,8 @@ footer .wrapper {
   text-decoration: line-through;
 }
 
-.catalog-item .no-discount {
+.catalog-item .no-discount,
+.popular-product-item .no-discount {
   margin-bottom: 31px;
 }
 
