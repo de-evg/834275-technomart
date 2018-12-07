@@ -236,7 +236,6 @@ a {
 
 .main-header-middle {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 39px;
 }
 
@@ -248,14 +247,16 @@ a {
 }
 
 .main-title {
+  box-sizing: border-box;
+  width: 255px;
+  margin-right: 65px;
+  padding-left: 45px;
+
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
   color: #ee3643;
-
-  width: 208px;
-  padding-left: 45px;
 }
 
 .main-contacts {
@@ -263,21 +264,26 @@ a {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
-  text-align: center;
+  margin-right: 51px;
 }
 
-.main-contacts span {
+.main-contacts span:nth-of-type(1) {
   position: relative;
   display: block;
   font-size: 21px;
   line-height: 21px;
   color: #e9292a;
-  padding: 9px 60px 9px 70px;
+
+  padding: 9px 47px 9px 72px;
   border: 3px solid #ffffff;
   margin-bottom: 3px;
 }
 
-.main-contacts span::before {
+.main-contacts span:nth-of-type(2) {
+  padding-left: 10px;
+}
+
+.main-contacts span:nth-of-type(1)::before {
   content: "";
   position: absolute;
   width: 19px;
@@ -286,15 +292,16 @@ a {
   background-image: url("../img/icon/icon-phone.svg");
 }
 
-
 /*Меню личного кабинета*/
 .user-menu-container {
   display: flex;
+  width: 300px;
   flex-direction: column;
 }
 
 .user-navigation {
   margin: 0;
+  margin-left: auto;
   padding: 0;
   display: flex;
   justify-content: flex-start;
@@ -325,8 +332,8 @@ a {
 .user-name {
   position: relative;
   margin: 0;
-  margin-bottom: 2px;
-  padding: 13px 70px 14px 13px;
+  margin-bottom: 6px;
+  padding: 13px 0 11px 13px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   line-height: 21px;
@@ -356,7 +363,7 @@ a {
 }
 
 .user-navigation-in {
-  padding: 0 20px;
+  padding-right: 70px;
 }
 
 .user-navigation li,
@@ -463,7 +470,7 @@ a {
 }
 
 .breadcrumbs li:nth-child(3) {
-  margin-right: 33px;
+  margin-right: 41px;
 }
 
 .breadcrumbs li:nth-of-type(n+2):before {
@@ -518,6 +525,7 @@ a {
 
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
+  font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
@@ -666,40 +674,110 @@ a {
   border-radius: 3px;
 }
 
-.filter-button:hover {
+/*Сортировка в каталоге*/
+.filter-sort {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 1px 0 1px 18px;
+  background-color: #f7f3ec;
+  border: none;
+  border-radius: 3px;
+}
 
+.sort-title {
+  margin: 0;
+  margin-right: 137px;
+  padding: 10px 0;
+  display: inline-block;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.filter-sort p {
+  margin: 0;
+}
+
+.sort-button {
+  display: inline-block;
+}
+
+.sort-button a {
+  color: rgba(0, 0, 0, 0.3);
+
+  margin: 0;
+  margin-right: 65px;
+  display: inline-block;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sort-button a:hover {
+  color: #000000;
+  border-bottom-style: solid;
+}
+
+.sort-button a:nth-of-type(n+4) {
+  margin-right: 0;
+}
+
+.sort-button a:nth-of-type(3) {
+  margin-right: 43px;
+}
+
+.sort-button a:nth-of-type(4) {
+  margin-right: 16px;
+}
+
+.sort-button a:nth-of-type(4),
+.sort-button a:nth-of-type(5) {
+  border: none;
+}
+
+.sorting-up path,
+.sorting-down path {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-up:hover path,
+.sorting-down:hover path {
+  fill: #000000;
+}
+
+a.sorting-active {
+  color: #ee3643;
+}
+
+.sorting-active path {
+  fill: #ee3643;
 }
 
 /*О перфораторах!!!!!!!!!!!!!!!!!!!!!проверить шрифт!!!!!!!!*/
+.about-product-wrapper {
+  background-color: #f2f6f8;
+  padding-top: 65px;
+  padding-bottom: 68px;
+}
+
 .about-product-title {
   margin: 0;
+  margin-bottom: 26px;
   padding: 0;
-
-}
-
-/*POPUP write us*/
-.modal-message label {
   font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
-.modal-message input,
-.modal-message textarea {
-  font-size: 13px;
-  line-height: 18px;
-
-  border: 2px solid #dee3e4;
-}
-
-.modal-message input {
-  width: 216px;
-  height: 34px;
-}
-
-.modal-message textarea {
-  width: 456px;
-  height: 110px;
+.about-product {
+  margin: 0;
 }
 
 /*Подвал*/
@@ -922,16 +1000,18 @@ footer .wrapper {
 /*Стили для карточек товаров*/
 .catalog-main-wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .product-catalog-wrapper {
   display: flex;
   flex-direction: column;
+  padding-bottom: 60px;
 }
 
 .product-catalog {
   margin: 0;
-  margin-bottom: 52px;
+  margin-bottom: 48px;
   padding: 0;
   display: flex;
   justify-content: flex-end;
@@ -969,7 +1049,7 @@ footer .wrapper {
 
 .catalog-item h3 {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 3px;
   padding: 0 25px;
 }
 
@@ -983,7 +1063,7 @@ footer .wrapper {
   margin: 0;
   position: absolute;
   width: 218px;
-  top: 42px;
+  top: 29px;
   left: 0;
   text-align: center;
   background-color: #ffffff;
@@ -1069,7 +1149,7 @@ footer .wrapper {
 }
 
 .catalog-item .no-discount {
-  margin-bottom: 42px;
+  margin-bottom: 31px;
 }
 
 .price {
@@ -1117,6 +1197,7 @@ footer .wrapper {
   margin: 0;
   padding: 0;
   display: flex;
+  margin-left: 20px;
 }
 
 .pagination .pagination-item {
@@ -1414,14 +1495,14 @@ footer .wrapper {
   border: 2px solid #ee3643;
 }
 
-.about-company .button,
-.contacts .button {
+.button {
   display: inline-block;
   min-width: 140px;
   padding: 6px 31px 8px;
   background-color: #ee3643;
   text-transform: uppercase;
   border-radius: 3px;
+  text-align: center;
 }
 
 .contacts .button {
@@ -1576,3 +1657,83 @@ footer .wrapper {
   right: 8px;
 }
 
+.modal-message label {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.modal-message input,
+.modal-message textarea {
+  font-size: 13px;
+  line-height: 18px;
+
+  border: 2px solid #dee3e4;
+}
+
+.modal-message input {
+  width: 216px;
+  height: 34px;
+}
+
+.modal-message textarea {
+  width: 456px;
+  height: 110px;
+}
+
+/*POPUP Товар в корзине*/
+.modal-kart {
+  box-sizing: border-box;
+  width: 620px;
+  position: fixed;
+  top: 300px;
+  left: 120px;
+  z-index: 30;
+  border-top: 7px solid #ee3643;
+  background-color: #ffffff;
+}
+
+.modal-kart p {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  padding: 65px 0;
+  padding-left: 180px;
+}
+
+.modal-kart p::before {
+  position: absolute;
+  content: "";
+  width: 66px;
+  height: 66px;
+  left: 80px;
+  top: 75px;
+  background-image: url("../img/icon/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.modal-kart-wrapper {
+  padding: 37px 80px;
+  background-color: #f1f1f1;
+}
+.modal-button-order {
+  width: 158px;
+  margin-right: 16px;
+}
+
+.button-next-purchase {
+  padding: 0;
+  background-color: #ffffff;
+  border: none;
+  width: 220px;
+  height: 38px;
+}
+
+
+.modal-kart .modal-close {
+  position: absolute;
+  content: "";
+  top: 8px;
+  right: 8px;
+}
