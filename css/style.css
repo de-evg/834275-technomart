@@ -1335,6 +1335,7 @@ footer .wrapper {
   justify-content: flex-end;
   align-items: flex-start;
   flex-wrap: wrap;
+  margin: 0;
   margin-bottom: 53px;
 }
 
@@ -1351,22 +1352,34 @@ footer .wrapper {
 
 .promo-item:first-child {
   background-color: #ffbf47;
+  background-image: url("../img/icon/icon-material.svg");
+  background-repeat: no-repeat;
+  background-position: 213px 31px;
   order: 1;
 }
 
 .promo-item:nth-child(2) {
   background-color: #3bbce3;
+  background-image: url("../img/icon/icon-instrument.svg");
+  background-repeat: no-repeat;
+  background-position: 197px 33px;
   order: 2;
 }
 
 .promo-item:nth-child(3) {
   background-color: #dc91d8;
+  background-image: url("../img/icon/icon-technic.svg");
+  background-repeat: no-repeat;
+  background-position: 190px 30px;
   margin-right: 0;
   order: 3;
 }
 
 .promo-item:nth-child(4) {
   background-color: #8ed78f;
+  background-image: url("../img/icon/icon-discount.svg");
+  background-repeat: no-repeat;
+  background-position: 196px 26px;
   margin-right: 0;
   order: 5;
 }
@@ -1376,12 +1389,16 @@ footer .wrapper {
   bottom: 0px;
   width: 300px;
   background-color: #ffc047;
+  background-image: url("../img/icon/icon-delivery.svg");
+  background-repeat: no-repeat;
+  background-position: 191px 32px;
   margin: 0;
   order: 6;
   align-self: stretch;
 }
 
 .promo-item h3 {
+  position: relative;
   margin: 0;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 24px;
@@ -1440,7 +1457,7 @@ footer .wrapper {
 }
 
 .promo-slider-item {
-  padding: 25px 0 0 26px;
+  padding: 25px 0 0 25px;
 }
 
 .promo-slider {
@@ -1448,22 +1465,26 @@ footer .wrapper {
 }
 
 .promo-slider-item h3 {
+  margin: 0;
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-.promo-slider p {
+.promo-slider-item p {
+  margin: 0;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
 }
 
 .promo-slider a {
+  box-sizing: border-box;
   position: absolute;
-  bottom: 46px;
+  bottom: 20px;
   left: 25px;
-  padding: 12px 49px;
+  min-width: 195px;
+  padding: 10px 10px;
   background-color: #ee3643;
   border-radius: 2px;
 }
@@ -1475,7 +1496,6 @@ footer .wrapper {
 .promo-slider a:focus {
   background-color: #ba2732;
 }
-
 
 .button-back, .button-next {
   position: absolute;
@@ -1489,12 +1509,14 @@ footer .wrapper {
   top: 114px;
   left: 25px;
   background-image: url("../img/content/slider/icon-left.svg");
+  cursor: pointer;
 }
 
 .button-next {
   top: 114px;
-  right: 25px;
+  right: 20px;
   background-image: url("../img/content/slider/icon-right.svg");
+  cursor: pointer;
 }
 
 
@@ -1512,18 +1534,29 @@ footer .wrapper {
 
 .link-brands,
 .link-product {
-  font-family: "Cuprum", "Arial"< sans-serif;
+  box-sizing: content-box;
+  display: inline-block;
+
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
   text-transform: uppercase;
-  padding: 10px 70px;
+
+  min-width: 171px;
+  padding: 10px 41px;
   background-color: #ee3643;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
-.link-product {
-  padding-left: 56px;
-  padding-right: 56px;
+.link-brands:hover,
+.link-product:hover {
+    background-color: #ca2c37;
+}
+
+.link-brands:focus,
+.link-product:focus {
+    background-color: #ba2732;
 }
 
 .popular-brands,
