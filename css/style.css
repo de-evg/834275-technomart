@@ -387,6 +387,14 @@ a {
   text-decoration: underline;
 }
 
+.user-navigation .in-account:hover {
+  color: #ee3643;
+}
+
+.user-navigation .in-account:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .user-navigation a {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
@@ -557,6 +565,7 @@ a {
   border-bottom: 1px solid #e5e5e5;
   padding: 0;
   padding-bottom: 21px;
+  margin: 0;
   margin-bottom: 23px;
 }
 
@@ -593,8 +602,74 @@ a {
 }
 
 .price-range-filter {
-  background-color: #f7f3ec;
+  position: relative;
+
 }
+
+.min-price-button, .max-price-button {
+  box-sizing: border-box;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+
+
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 0 0 #e0ddd8;
+}
+
+.min-price-button {
+  top: 26px;
+  left: 19px;
+}
+
+.max-price-button {
+  top: 26px;
+  right: 4px;
+}
+
+.min-price-button::before, .max-price-button::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  top: 10px;
+  left: 10px;
+  background-color: #ababab;
+}
+
+.scale-range {
+  background-color: #f7f3ec;
+  border-radius: 3px;
+  padding-top: 39px;
+  padding-bottom: 39px;
+  padding-left: 30px;
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.scale {
+  width: 168px;
+  border: 1px solid #00ca74;
+}
+
+.min-price, .max-price {
+  box-sizing: border-box;
+  width: 95px;
+  background-color: #f7f3ec;
+  border: none;
+  border-radius: 3px;
+
+  text-align: center;
+  padding: 10px 0;
+}
+
+.min-price {
+  margin-right: 26px;
+}
+
 
 .brands-filter input,
 .type-filter input {
