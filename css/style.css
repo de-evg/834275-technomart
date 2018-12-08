@@ -238,7 +238,7 @@ a {
 
 .main-header-middle {
   display: flex;
-  margin-bottom: 39px;
+  margin-bottom: 40px;
 }
 
 .catalog-header .main-header-middle {
@@ -316,7 +316,7 @@ a {
 
 .user-navigation-button {
   display: inline-block;
-  padding: 12px 25px 10px 14px;
+  padding: 12px 26px 12px 14px;
   margin-right: 10px;
   background-color: #ffffff;
 }
@@ -434,27 +434,55 @@ a {
   padding: 0;
   margin: 0;
   margin-bottom: 60px;
-  display: flex;
-}
-
-.main-navigation li {
-  width: 100%;
 }
 
 .main-navigation a {
   display: block;
-  background-color: #32425c;
+  min-width: 60px;
   padding-top: 20px;
   padding-bottom: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #32425c;
   border-bottom: 5px solid #293449;
   text-align: center;
+
+   font-family: "Cuprum", "Arial", sans-serif;
+   font-size: 17px;
+   line-height: 17px;
 }
 
-.main-navigation a {
- font-family: "Cuprum", "Arial", sans-serif;
- font-size: 17px;
- line-height: 17px;
+.main-navigation li {
+  display: inline-block;
+  margin-left: -4px;
 }
+
+.main-navigation li:first-child {
+  margin-left: 0;
+}
+
+.main-navigation li:first-child a {
+  padding-left: 49px;
+}
+
+.main-navigation li:nth-child(3) a {
+  padding-left: 25px;
+}
+
+.main-navigation li:nth-child(4) a {
+  padding-left: 25px;
+}
+
+.main-navigation li:nth-child(5) a {
+  padding-left: 25px;
+}
+
+
+.main-navigation li:last-child a {
+  padding-right: 53px;
+  padding-left: 36px;
+}
+
 
 .main-navigation a:hover {
   background-color: #293449;
