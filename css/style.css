@@ -1425,7 +1425,7 @@ footer .wrapper {
   flex-basis: 300px;
   margin-right: 20px;
   margin-bottom: 20px;
-  padding: 20px 23px 22px;
+  padding: 21px 22px 21px;
 
 }
 
@@ -1449,7 +1449,7 @@ footer .wrapper {
   background-color: #dc91d8;
   background-image: url("../img/icon/icon-technic.svg");
   background-repeat: no-repeat;
-  background-position: 190px 30px;
+  background-position: 191px 31px;
   margin-right: 0;
   order: 3;
 }
@@ -1490,6 +1490,7 @@ footer .wrapper {
 .promo-item a {
   display: block;
   width: 135px;
+  margin-left: 3px;
   padding: 10px 0;
   text-align: center;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -1498,6 +1499,12 @@ footer .wrapper {
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 10%);
   border-radius: 2px;
+}
+
+.promo-item:nth-child(3) a,
+.promo-item:nth-child(4) a,
+.promo-item:nth-child(5) a {
+  margin-left: 1px;
 }
 
 .promo-item a:hover {
@@ -1523,7 +1530,8 @@ footer .wrapper {
   background-color: #725749;
   background-image: url("../img/content/slider/1.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+/*  background-size: cover;*/
+  background-position: 0 0;
 }
 .promo-item:nth-child(6) .promo-slider-item:last-of-type {
   box-sizing: border-box;
@@ -1532,7 +1540,8 @@ footer .wrapper {
   background-color: #b0a89f;
   background-image: url("../img/content/slider/2.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+/*  background-size: cover;*/
+  background-position: 0 0;
 }
 
 .promo-slider-item {
@@ -1563,8 +1572,8 @@ footer .wrapper {
 .promo-slider a {
   box-sizing: border-box;
   position: absolute;
-  bottom: 20px;
-  left: 25px;
+  bottom: 22px;
+  left: 23px;
   min-width: 195px;
   padding: 10px 10px;
   background-color: #ee3643;
@@ -1582,7 +1591,7 @@ footer .wrapper {
 .slider-toggle {
   position: absolute;
   left: 295px;
-  bottom: 25px;
+  bottom: 29px;
 }
 
 .slider-toggle .slider-toggle-item--1,
