@@ -12,7 +12,7 @@
   	<header class="main-header index-header">
   		<div class="wrapper">
 	      <div class="main-header-top container">
-	        <a class="main-logo header-logo"><img src="img/logo.svg" width="110" height="17" alt="Логотип интернет-магазина &ldquo;Техномарт&rdquo;"></a>
+	        <a class="main-logo header-logo"><img src="img/logo.png" width="109" height="17" alt="Логотип интернет-магазина &ldquo;Техномарт&rdquo;"></a>
 	        <form class="search-form" action="#" method="post">
             <input  class="main-search" type="search" name="search" placeholder="Поиск" aria-label=" Поиск по сайту">
 	          <button type="submit" name="search-button" aria-label="Найти">
@@ -86,17 +86,24 @@
           	</li>
           	<li class="promo-item">
           	  <div class="promo-slider">
-          	  	<section class="promo-slider-item ">
+                <input id="slide-drills" class="visually-hidden" type="radio" name="toggle" checked>
+                <input id="slide-perforators" class="visually-hidden" type="radio" name="toggle">
+                <div class="slider-toggle">
+                  <label class="slider-toggle-item--1" for="slide-drills"></label>
+                  <label class="slider-toggle-item--2" for="slide-perforators"></label>
+                </div>
+          	  	<section class="promo-slider-item">
           	      <h3>Дрели</h3>
           	      <p>Соседям на радость!</p>
+                  <a href="#">Открыть католог</a>
           	  	</section>
-          	  	<section class="promo-slider-item visually-hidden">
+          	  	<section class="promo-slider-item">
           	      <h3>Перфораторы</h3>
           	      <p>Настоящие мужские игрушки</p>
+                  <a href="catalog.html">Открыть католог</a>
           	  	</section>
-                <a href="catalog.html">Открыть католог</a>
-                <button class="button-back" aria-label="Предыдущий слайд"></button>
-                <button class="button-next" aria-label="Следующий слайд"></button>
+                  <button class="button-back" aria-label="Предыдущий слайд"></button>
+                  <button class="button-next" aria-label="Следующий слайд"></button>
           	  </div>
           	</li>
           </ul>
@@ -306,7 +313,7 @@
       <div class="wrapper footer-color-wrapper">
         <div class="footer-top container footer-color-wrapper">
           <div class="footer-logo">
-            <a class="main-logo main-footer-logo" href="index.html"><img src="img/logo-footer.svg" width="138" height="21" alt="Логотип интернет-магазина &ldquo;Техномарт&rdquo;"></a>
+            <a class="main-logo main-footer-logo" href="index.html"><img src="img/logo.png" width="138" height="21" alt="Логотип интернет-магазина &ldquo;Техномарт&rdquo;"></a>
             <p class="main-contacts footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
           </div>
           <ul class="footer-navigation">
