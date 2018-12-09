@@ -1712,6 +1712,105 @@ footer .wrapper {
 
 
 /*Главная: сервисы, о компании, контакты*/
+.services-title h2,
+.about-company-title,
+.contacts-title {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.services-wrapper {
+  padding-top: 85px;
+  padding-bottom: 102px;
+  background-color: #f4f7f9;
+}
+
+.services-title {
+  padding-right: 540px;
+  padding-bottom: 70px;
+}
+
+.services-title p {
+  margin: 0;
+}
+
+#delivery,
+#garanty,
+#credit {
+  display: none;
+}
+
+.services-toggle {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 240px;
+  margin-right: 80px;
+}
+
+.delivery-toggle,
+.garanty-toggle,
+.credit-toggle {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 20px;
+  padding-left: 22px;
+  background-color: #32425c;
+
+  border-top: 1px solid #4e637c;
+}
+
+.services-toggle .delivery-toggle {
+  border: none;
+}
+
+#delivery:checked ~ .services .delivery-toggle,
+#garanty:checked ~ .services .garanty-toggle,
+#credit:checked ~ .services .credit-toggle {
+  color: #32425c;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.service-item-delivery,
+.service-item-garanty,
+.service-item-credit {
+  display: none;
+  width: 380px;
+}
+
+.service-item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.service-item h3 {
+  margin: 0;
+
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+#delivery:checked ~ .services .service-item-delivery,
+#garanty:checked ~ .services .service-item-garanty,
+#credit:checked ~ .services .service-item-credit {
+  display: inline-block;
+}
+
+
 .company-wrapper {
   display: flex;
   justify-content: space-between;
@@ -1731,16 +1830,7 @@ footer .wrapper {
   padding-bottom: 85px;
 }
 
-.services-title,
-.about-company-title,
-.contacts-title {
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 28px;
-}
+
 
 .about-company p,
 .contacts p {

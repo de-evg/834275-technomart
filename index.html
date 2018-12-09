@@ -59,8 +59,8 @@
         </ul>
       </nav>
   	</header>
-    <main class="container">
-        <section>
+    <main>
+        <section class="container">
           <h2 class="visually-hidden">Наши предложения</h2>
           <ul class="promo">
           	<li class="promo-item">
@@ -109,7 +109,7 @@
           </ul>
         </section>
 
-        <section>
+        <section class="container">
           <div class="product-title">
             <h2 class="popular-product">Популярные товары:</h2>
             <a class="link-product" href="#">Все популярные товары</a>
@@ -175,7 +175,7 @@
   		    </ul>
         </section>
 
-        <section>
+        <section class="container">
             <div class="brands-title">
               <h2 class="popular-brands">Популярные производители:</h2>
               <a class="link-brands" href="#">Все производители</a>
@@ -224,41 +224,46 @@
             </ul>
         </section>
 
-        <section>
-          <h2 class="services-title">Сервисы</h2>
-          <p>Хороший интернет-магазин отличается от плохого не только ценами!
-		      Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-          <div>
-          	<label>
-          	  <input type="radio" name="service" checked>Доставка
-          	</label>
-          	<label>
-          	  <input type="radio" name="service">Гарантия
-          	</label>
-          	<label>
-          	  <input type="radio" name="service">Кредит
-          	</label>
-          </div>
-          <section class="service-item">
-          	<h3>Доставка</h3>
-          	<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-          </section>
+        <section class="services-wrapper">
+          <div class="container">
+            <div  class="services-title">
+              <h2>Сервисы</h2>
+              <p>Хороший интернет-магазин отличается от плохого не только ценами!
+  		      Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+            </div>
+            <input id="delivery" type="radio" name="service" checked>
+            <input id="garanty" type="radio" name="service">
+            <input id="credit" type="radio" name="service">
+            <div class="services">
+              <div class="services-toggle">
+            	  <label class="delivery-toggle" for="delivery">Доставка</label>
+            	  <label class="garanty-toggle" for="garanty">Гарантия</label>
+            	  <label class="credit-toggle" for="credit">Кредит</label>
+              </div>
+              <div class="service-item">
+                <section class="service-item-delivery">
+                	<h3>Доставка</h3>
+                	<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                </section>
 
-          <section class="service-item visually-hidden">
-          	<h3>Гарантия</h3>
-          	<p>Если купленный у нас товар поломается или заискрит,
-			       а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
-			       Дом уж восстановите как-нибудь сами.</p>
-          </section>
-          <section class="service-item visually-hidden">
-          	<h3>Кредит</h3>
-          	<p>Залезть в долговую яму стало проще!
-			       Кредитные консультанты придут вам на помощь.</p>
-			      <a href="#">Отправить заявку</a>
-          </section>
+                <section class="service-item-garanty">
+                	<h3>Гарантия</h3>
+                	<p>Если купленный у нас товар поломается или заискрит,
+      			       а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+      			       Дом уж восстановите как-нибудь сами.</p>
+                </section>
+
+                <section class="service-item-credit">
+                	<h3>Кредит</h3>
+                	<p>Залезть в долговую яму стало проще!
+      			       Кредитные консультанты придут вам на помощь.</p>
+      			      <a class="button" href="#">Отправить заявку</a>
+                </section>
+              </div>
+          </div>
         </section>
 
-        <div class="company-wrapper">
+        <div class="company-wrapper container">
           <section class="about-company">
             <h2 class="about-company-title">Компания «Техномарт»</h2>
             <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -272,7 +277,7 @@
             </ul>
             <a class="button" href="#">Подробнее о компании</a>
           </section>
-          <section class="contacts">
+          <section class="contacts container">
             <h2 class="contacts-title">Контакты</h2>
               <p>Вы можете забрать товар сами, заехав в наш офис:</p>
               <img src="img/content/map.jpg" width="300" height="158" alt="Магазин расположен по адресу: г.Санкт-Петербург, ул.Конюшенная, д.19/8">
