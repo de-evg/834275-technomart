@@ -1203,6 +1203,10 @@ footer .wrapper {
   z-index: 20;
 }
 
+.popular-product-item .catalog-item-image {
+  top: -6px;
+}
+
 .catalog-item-image img {
   border: none;
   max-width: 100%;
@@ -1670,6 +1674,7 @@ footer .wrapper {
 .popular-product {
   margin: 0;
   font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
@@ -1681,20 +1686,30 @@ footer .wrapper {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 85px;
 }
 
 .popular-brands-catalog .popular-brands-item {
-  display: flex;
-  min-width: 218px;
-  list-style: none;
-  width: 218px;
+  max-width: 218px;
   height: 143px;
+  list-style: none;
+  border: 1px solid #eaeaea;
+
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
-.popular-brands-item img {
-  display: block;
-  border: 1px solid #eaeaea;
+.popular-brands-catalog .popular-brands-item:nth-child(4n) {
+  margin-right: 0;
 }
+
+.popular-brands-catalog .popular-brands-item:nth-last-child(1),
+.popular-brands-catalog .popular-brands-item:nth-last-child(2),
+.popular-brands-catalog .popular-brands-item:nth-last-child(3),
+.popular-brands-catalog .popular-brands-item:nth-last-child(4) {
+  margin-bottom: 0;
+}
+
 
 /*Главная: сервисы, о компании, контакты*/
 .company-wrapper {
