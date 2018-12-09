@@ -1187,13 +1187,12 @@ footer .wrapper {
   position: absolute;
   width: 218px;
   height: 168px;
-  top: 0;
+  top: -1px;
   left: 0;
   text-align: center;
   border: none;
   background-color: #ffffff;
   z-index: 20;
-  border: none;
 }
 
 .catalog-item-image img {
@@ -1447,7 +1446,7 @@ footer .wrapper {
   background-position: 191px 32px;
   margin: 0;
   order: 6;
-  align-self: stretch;
+
 }
 
 .promo-item h3 {
