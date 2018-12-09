@@ -1136,6 +1136,10 @@ footer .wrapper {
   flex-wrap: wrap;
 }
 
+.popular-product-catalog img {
+
+}
+
 .catalog-item,
 .popular-product-item {
   position: relative;
@@ -1146,6 +1150,10 @@ footer .wrapper {
   padding-bottom: 10px;
   list-style: none;
   border: 1px solid #f6f6f6;
+}
+
+.popular-product-item:first-child {
+    margin-left: 0;
 }
 
 .catalog-item:hover,
