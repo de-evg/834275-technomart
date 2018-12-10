@@ -35,7 +35,7 @@ a {
 }
 
 .main-header {
-  background-color: #777777 /*#f3f7f9*/;
+  background-color: #f3f7f9;
   display: flex;
   flex-direction: column;
 }
@@ -971,7 +971,7 @@ footer .wrapper {
 }
 
 .footer-navigation-item {
-  margin-left: 60px;
+  margin-left: 59px;
 }
 
 .footer-navigation-item:nth-child(1),
@@ -1151,8 +1151,8 @@ footer .wrapper {
   flex-wrap: wrap;
 }
 
-.popular-product-catalog img {
-
+.popular-product-catalog {
+  margin-bottom: 21px;
 }
 
 .catalog-item,
@@ -1161,7 +1161,7 @@ footer .wrapper {
   width: 218px;
   margin-left: 20px;
   margin-bottom: 20px;
-  padding-top: 178px;
+  padding-top: 179px;
   padding-bottom: 10px;
   list-style: none;
   border: 1px solid #f6f6f6;
@@ -1191,13 +1191,16 @@ footer .wrapper {
 .catalog-item h3,
 .popular-product-item h3 {
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
   padding: 0 25px;
   line-height: 20px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
+}
 
+.popular-product-item .old-price {
+  margin-bottom: 9px;
 }
 
 .catalog-item-title {
@@ -1219,7 +1222,7 @@ footer .wrapper {
 }
 
 .popular-product-item .catalog-item-image {
-  top: -6px;
+  top: 0px;
 }
 
 .catalog-item-image img {
@@ -1425,7 +1428,7 @@ footer .wrapper {
   flex-basis: 300px;
   margin-right: 20px;
   margin-bottom: 20px;
-  padding: 21px 22px 21px;
+  padding: 20px 22px 21px;
 
 }
 
@@ -1653,8 +1656,6 @@ footer .wrapper {
   cursor: pointer;
 }
 
-
-
 /*Главная: популярные товары, производители, сервисы*/
 .brands-title,
 .product-title {
@@ -1662,7 +1663,7 @@ footer .wrapper {
   justify-content: space-between;
   align-items: center;
   background-color: #f9f5f0;
-  padding: 30px 25px;
+  padding: 27px 24px 24px 26px;
   margin-bottom: 20px;
 }
 
@@ -1684,12 +1685,14 @@ footer .wrapper {
 }
 
 .link-brands:hover,
-.link-product:hover {
+.link-product:hover,
+.link-credit:hover {
     background-color: #ca2c37;
 }
 
 .link-brands:focus,
-.link-product:focus {
+.link-product:focus,
+.link-credit:focus {
     background-color: #ba2732;
 }
 
@@ -1739,22 +1742,23 @@ footer .wrapper {
 .about-company-title,
 .contacts-title {
   font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 }
 
 .services-wrapper {
-  padding-top: 85px;
+  padding-top: 66px;
   padding-bottom: 102px;
   background-color: #f4f7f9;
 }
 
 .services-title {
   padding-right: 540px;
-  padding-bottom: 70px;
+  margin-bottom: 67px;
 }
 
 .services-title p {
@@ -1767,11 +1771,14 @@ footer .wrapper {
   display: none;
 }
 
+
 .services-toggle {
+  position: relative;
   display: inline-block;
   box-sizing: border-box;
   width: 240px;
-  margin-right: 80px;
+  padding-top: 2px;
+  margin-right: 77px;
 }
 
 .delivery-toggle,
@@ -1784,12 +1791,25 @@ footer .wrapper {
   color: #ffffff;
 
   display: block;
-  padding-top: 17px;
-  padding-bottom: 20px;
+  padding-top: 14px;
+  padding-bottom: 17px;
   padding-left: 22px;
   background-color: #32425c;
 
   border-top: 1px solid #4e637c;
+}
+
+.delivery-toggle {
+  padding-top: 14px;
+}
+
+.garanty-toggle {
+  padding-top: 13px;
+}
+
+.credit-toggle {
+  padding-top: 13px;
+  padding-bottom: 16px;
 }
 
 .services-toggle .delivery-toggle {
@@ -1804,11 +1824,16 @@ footer .wrapper {
   border-color: #ffffff;
 }
 
-.service-item-delivery,
-.service-item-garanty,
-.service-item-credit {
-  display: none;
-  width: 380px;
+.services-toggle::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 279px;
+  background-image: url("../img/decor/shadow.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: -46px;
+  right: 0;
 }
 
 .service-item {
@@ -1816,16 +1841,91 @@ footer .wrapper {
   vertical-align: top;
 }
 
+.service-item p {
+  margin: 0;
+}
+
+.service-item-delivery,
+.service-item-garanty,
+.service-item-credit {
+  position: relative;
+  display: none;
+  width: 380px;
+}
+
+.service-item-delivery::after {
+  position: absolute;
+  content: "";
+  width: 468px;
+  height: 261px;
+  background-image: url("../img/decor/delivery.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  bottom: -128px;
+  right: -239px;
+}
+
+.service-item-garanty::after {
+  position: absolute;
+  content: "";
+  width: 387px;
+  height: 282px;
+  background-image: url("../img/decor/garanty.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  bottom: -104px;
+  right: -248px;
+}
+
+.service-item-credit::after {
+  position: absolute;
+  content: "";
+  width: 464px;
+  height: 285px;
+  background-image: url("../img/decor/credit.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  bottom: -112px;
+  right: -250px;
+}
+
+.service-item-delivery p:nth-of-type(1){
+  width: 280px;
+}
+
+.service-item-delivery p:nth-of-type(2){
+  width: 175px;
+}
+
+.service-item-credit p {
+  width: 280px;
+  margin-bottom: 25px;
+}
+
+.service-item-credit a {
+  min-width: 141px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 12px;
+  padding-bottom: 9px;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
 .service-item h3 {
   margin: 0;
+  margin-bottom: 26px;
 
   font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
-  line-height: 24px;
+  line-height: 36px;
   text-transform: uppercase;
   color: #32425c;
 }
+
+
 
 #delivery:checked ~ .services .service-item-delivery,
 #garanty:checked ~ .services .service-item-garanty,
@@ -1849,16 +1949,14 @@ footer .wrapper {
 
 .about-company,
 .contacts {
-  padding-top: 106px;
+  padding-top: 79px;
   padding-bottom: 85px;
 }
-
-
 
 .about-company p,
 .contacts p {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-size: 13px;
   line-height: 24px;
 }
@@ -1869,14 +1967,14 @@ footer .wrapper {
 }
 
 .about-company p:nth-of-type(2) {
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 }
 
 .about-company ul {
   margin: 0;
   padding: 0;
   padding-left: 35px;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
 }
 
 .about-company li {
@@ -1893,14 +1991,17 @@ footer .wrapper {
   content: "";
   top: 8px;
   left: -35px;
-  width: 25px;
+  width: 21px;
   border: 2px solid #ee3643;
 }
 
 .button {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
   display: inline-block;
   min-width: 140px;
-  padding: 6px 31px 8px;
+  padding: 10px 40px 9px;
   background-color: #ee3643;
   text-transform: uppercase;
   border-radius: 3px;
@@ -1911,6 +2012,7 @@ footer .wrapper {
   box-sizing: border-box;
   text-align: center;
   width: 100%;
+  padding-left: 44px;
 }
 
 .about-company .button:hover,
