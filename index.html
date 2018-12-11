@@ -39,13 +39,15 @@
           <span>+7 (812) 555-05-55</span>
           <span> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </p>
-        <ul class="user-navigation" aria-label="Меню личного кабинета">
-          <li>
-            <a class="user-navigation-login user-navigation-button" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path class="login-icon" fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
-              </svg>Войти</a></li>
-          <li><a class="user-navigation-registration user-navigation-button" href="#">Регистрация</a></li>
-        </ul>
+        <div class="user-menu-container">
+          <ul class="user-navigation" aria-label="Меню личного кабинета">
+            <li>
+              <a class="user-navigation-signin user-navigation-button" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path class="login-icon" fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+                </svg>Войти</a></li>
+            <li><a class="user-navigation-registration user-navigation-button" href="#">Регистрация</a></li>
+          </ul>
+        </div>
       </div>
       <nav class="container">
         <ul class="main-navigation" aria-label="Навигация по сайту">
@@ -92,15 +94,15 @@
                   <label class="slider-toggle-item--1" for="slide-drills"></label>
                   <label class="slider-toggle-item--2" for="slide-perforators"></label>
                 </div>
+                <section class="promo-slider-item">
+                  <h3>Перфораторы</h3>
+                  <p>Настоящие мужские игрушки</p>
+                  <a href="catalog.html">Открыть католог</a>
+                </section>
           	  	<section class="promo-slider-item">
           	      <h3>Дрели</h3>
           	      <p>Соседям на радость!</p>
                   <a href="#">Открыть католог</a>
-          	  	</section>
-          	  	<section class="promo-slider-item">
-          	      <h3>Перфораторы</h3>
-          	      <p>Настоящие мужские игрушки</p>
-                  <a href="catalog.html">Открыть католог</a>
           	  	</section>
                   <button class="button-back" aria-label="Предыдущий слайд"></button>
                   <button class="button-next" aria-label="Следующий слайд"></button>
@@ -116,9 +118,6 @@
           </div>
           <ul class="popular-product-catalog product-catalog">
   		     <li class="popular-product-item">
-  			      <h3>
-  			        <a class="catalog-item-title" href="#">Перфоратор BOSCH BFG 9000</a>
-  			      </h3>
               <p class="buy-item">
                 <a class="button-buy" href="#">Купить</a>
                 <a class="button-bookmark" href="#">В закладки</a>
@@ -126,13 +125,13 @@
               <p class="catalog-item-image">
                 <img src="img/content/catalog_items/3.jpg" width="218" height="168" alt="Перфоратор Bosch BFG 9000">
               </p>
+              <h3>
+                <a class="catalog-item-title" href="#">Перфоратор BOSCH BFG 9000</a>
+              </h3>
   			      <p class="old-price" aria-label="Старая цена">32500 Р.</p>
   			      <p class="price" aria-label="Текущая цена">25500 Р.</p>
   			   </li>
   			   <li class="popular-product-item">
-  			    <h3>
-  			      <a class="catalog-item-title" href="#">Перфоратор BOSCH BFG 3000</a>
-  		  	  </h3>
             <p class="buy-item">
               <a class="button-buy" href="#">Купить</a>
               <a class="button-bookmark" href="#">В закладки</a>
@@ -140,13 +139,13 @@
             <p class="catalog-item-image">
               <img src="img/content/catalog_items/1.jpg" width="218" height="168" alt="Перфоратор Bosch BFG 3000">
             </p>
+            <h3>
+              <a class="catalog-item-title" href="#">Перфоратор BOSCH BFG 3000</a>
+            </h3>
   			    <p class="old-price" aria-label="Старая цена">22500 Р.</p>
   			    <p class="price" aria-label="Текущая цена">15500 Р.</p>
   			   </li>
   			   <li class="popular-product-item">
-  			    <h3>
-  			      <a class="catalog-item-title" href="#">Перфоратор BOSCH BFG 6000</a>
-  			    </h3>
             <p class="buy-item">
               <a class="button-buy" href="#">Купить</a>
               <a class="button-bookmark" href="#">В закладки</a>
@@ -154,13 +153,13 @@
             <p class="catalog-item-image">
                 <img src="img/content/catalog_items/2.jpg" width="218" height="168" alt="Перфоратор Bosch BFG 6000">
             </p>
+            <h3>
+              <a class="catalog-item-title" href="#">Перфоратор BOSCH BFG 6000</a>
+            </h3>
   	  		  <p class="old-price" aria-label="Старая цена">30500 Р.</p>
   		  	  <p class="price" aria-label="Новая цена">25500 Р.</p>
   			   </li>
-  		  	 <li class="popular-product-item">
-  			    <h3 class="no-discount">
-  			      <a class="catalog-item-title" href="#">Перфоратор BOSCH BFG 2000</a>
-  			    </h3>
+  		  	 <li class="popular-product-item no-discount">
             <p class="buy-item">
               <a class="button-buy" href="#">Купить</a>
               <a class="button-bookmark" href="#">В закладки</a>
@@ -168,6 +167,9 @@
             <p class="catalog-item-image">
               <img src="img/content/catalog_items/4.jpg" width="218" height="168" alt="Перфоратор Bosch BFG 2000">
             </p>
+            <h3>
+              <a class="catalog-item-title" href="#">Перфоратор BOSCH BFG 2000</a>
+            </h3>
   	  		  <p class="old-price visually-hidden"></p>
   		  	  <p class="price" aria-label="Текущая цена">12500 Р.</p>
   			    <p class="new-item">New</p>
