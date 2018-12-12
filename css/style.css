@@ -38,8 +38,8 @@ a:hover,
 a:focus,
 button:hover,
 button:focus,
-label:hover label::before,
-label:focus label::before {
+input[type="checkbox"]:focus + label::before,
+input[type="radio"]:focus + label::before {
   outline: 3px solid lightblue;
 }
 
@@ -774,7 +774,7 @@ width: 121px;
 
 .brands-filter input,
 .type-filter input {
-  display: none;
+  opacity: 0;
 }
 
 .brands-filter label,
