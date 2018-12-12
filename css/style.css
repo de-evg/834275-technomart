@@ -481,6 +481,7 @@ width: 121px;
   margin: 0;
   margin-bottom: 60px;
   text-align: center;
+  display: flex;
 }
 
 .main-navigation a {
@@ -499,11 +500,6 @@ width: 121px;
    line-height: 17px;
 }
 
-.main-navigation li {
-  display: inline-block;
-  margin-left: -4px;
-}
-
 .main-navigation li:first-child {
   margin-left: 0;
 }
@@ -513,7 +509,7 @@ width: 121px;
 }
 
 .main-navigation li:nth-child(3) a {
-  padding-left: 25px;
+  padding-left: 24px;
 }
 
 .main-navigation li:nth-child(4) a {
@@ -525,13 +521,13 @@ width: 121px;
 }
 
 .main-navigation li:nth-child(6) a {
-  padding-left: 34px;
+  padding-left: 33px;
 }
 
 
 .main-navigation li:last-child a {
-  padding-right: 53px;
-  padding-left: 34px;
+  padding-right: 54px;
+  padding-left: 33px;
 }
 
 
