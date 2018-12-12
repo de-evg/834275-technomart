@@ -256,7 +256,6 @@ a {
 .user-navigation {
   margin: 0;
   padding: 0;
-  word-break: break-all;
 }
 
 .main-title {
@@ -1418,8 +1417,8 @@ footer .wrapper {
   min-width: 66px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 35px;
-  padding-right: 22px;
+  padding-left: 36px;
+  padding-right: 23px;
   word-break: break-all;
   font-size: 17px;
   line-height: 18px;
@@ -1860,10 +1859,14 @@ footer .wrapper {
 }
 
 .services-wrapper {
-  position: relative;
+
   padding-top: 66px;
   padding-bottom: 102px;
   background-color: #f4f7f9;
+}
+
+.services-container {
+  position: relative;
 }
 
 .services-title {
@@ -1955,7 +1958,6 @@ footer .wrapper {
 
 .service-item p {
   margin: 0;
-  word-break: break-all;
 }
 
 .service-item-delivery,
@@ -1963,7 +1965,6 @@ footer .wrapper {
 .service-item-credit {
   display: none;
   width: 375px;
-  word-break: break-all;
 }
 
 .service-item-delivery::after {
@@ -1974,8 +1975,8 @@ footer .wrapper {
   background-image: url("../img/decor/delivery.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  bottom: 0;
-  right: 78px;
+  bottom: -102px;
+  right: 11px;
 }
 
 .service-item-garanty::after {
@@ -1986,8 +1987,8 @@ footer .wrapper {
   background-image: url("../img/decor/garanty.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  bottom: 0px;
-  right: 69px;
+  bottom: -102px;
+  right: 3px;
 }
 
 .service-item-credit::after {
@@ -1998,8 +1999,8 @@ footer .wrapper {
   background-image: url("../img/decor/credit.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  bottom: 0px;
-  right: 66px;
+  bottom: -102px;
+  right: 0px;
 }
 
 .service-item-delivery p:nth-of-type(1){
@@ -2038,15 +2039,11 @@ footer .wrapper {
   text-transform: uppercase;
   color: #32425c;
 }
-
-
-
 #delivery:checked ~ .services .service-item-delivery,
 #garanty:checked ~ .services .service-item-garanty,
 #credit:checked ~ .services .service-item-credit {
   display: inline-block;
 }
-
 
 .company-wrapper {
   display: flex;
