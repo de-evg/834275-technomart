@@ -34,6 +34,15 @@ a {
   text-decoration: none;
 }
 
+a:hover,
+a:focus,
+button:hover,
+button:focus,
+label:hover label::before,
+label:focus label::before {
+  outline: 3px solid lightblue;
+}
+
 .main-header {
   background-color: #f3f7f9;
   display: flex;
@@ -673,9 +682,9 @@ width: 121px;
   flex-direction: column;
 }
 
-.price-filter legend,
-.brands-filter legend,
-.type-filter legend {
+.price-filter-title,
+.brands-filter-title,
+.type-filter-title {
   margin: 0;
   margin-bottom: 15px;
   font-weight: 700;
@@ -1418,7 +1427,7 @@ footer .wrapper {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 36px;
-  padding-right: 23px;
+  padding-right: 21px;
   word-break: break-all;
   font-size: 17px;
   line-height: 18px;

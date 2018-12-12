@@ -80,9 +80,9 @@
       		<section>
             <form class="filter" action="#" method="post">
       			  <h2 class="products-filter">Фильтр:</h2>
-              <fieldset class="filter-item-container">
-                <div class="price-filter">
-                  <legend>Цена:</legend>
+              <fieldset class="filter-item-container price-filter">
+
+                  <legend class="price-filter-title">Цена:</legend>
                   <div class="price-range-filter">
                     <div class="scale-range">
                       <button class="min-price-button" aria-label="Минимальная цена"></button>
@@ -94,36 +94,36 @@
                     <label class="visually-hidden" for="max-price">Поле ввода максимальной цены</label>
                     <input class="max-price" id="max-price" type="text" name="max-value" placeholder="40000">
                   </div>
-                </div>
+
               </fieldset>
               <fieldset class="filter-item-container">
+                <legend class="brands-filter-title">Производители:</legend>
                 <div class="brands-filter">
-                  <legend>Производители:</legend>
                   <input class="brands-filter-checkbox" id="bosch" type="checkbox" name="filter-bosch">
-                  <label for="bosch">Bosch</label>
+                  <label for="bosch" tabindex="1">Bosch</label>
 
                   <input class="brands-filter-checkbox" id="interskol" type="checkbox" name="filter-interskol">
-                  <label for="interskol">Интерскол</label>
+                  <label for="interskol" tabindex="1">Интерскол</label>
 
                   <input class="brands-filter-checkbox" id="makita" type="checkbox" name="filter-makita">
-                  <label for="makita">Makita</label>
+                  <label for="makita" tabindex="1">Makita</label>
 
                   <input class="brands-filter-checkbox" id="dewalt" type="checkbox" name="filter-dewalt">
-                  <label for="dewalt">DeWALT</label>
+                  <label for="dewalt" tabindex="1">DeWALT</label>
 
                   <input class="brands-filter-checkbox" id="hitachi" type="checkbox" name="filter-hitachi">
-                  <label for="hitachi">Hitachi</label>
+                  <label for="hitachi" tabindex="1">Hitachi</label>
                 </div>
               </fieldset>
-              <fieldset class="filter-item-container">
-                <div class="type-filter">
-                  <legend>Питание:</legend>
+              <fieldset class="filter-item-container type-filter">
+                  <div class="type-filter">
+                  <legend class="type-filter-title">Питание:</legend>
 
-                  <input class="type-filter-radio" id="type-product-first" type="radio" name="type-product" value="a" checked>
-                  <label for="type-product-first">Аккумуляторные</label>
+                    <input class="type-filter-radio" id="type-product-first" type="radio" name="type-product" value="a" checked>
+                    <label for="type-product-first" tabindex="1">Аккумуляторные</label>
 
-                  <input class="type-filter-radio" id="type-product-second" type="radio" name="type-product" value="b">
-                  <label for="type-product-second">Сетевые</label>
+                    <input class="type-filter-radio" id="type-product-second" type="radio" name="type-product" value="b">
+                    <label for="type-product-second" tabindex="1">Сетевые</label>
                 </div>
               </fieldset>
               <button class="filter-button" type="submit">Показать</button>
@@ -141,6 +141,7 @@
                   <a class="sorting-up sorting-active" aria-label="По возрастанию"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
                   <a class="sorting-down" href="#" aria-label="По убыванию"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a>
                 </div>
+              </div>
             </section>
 
             <section>
@@ -298,7 +299,7 @@
 
       <section class="modal">
         <div class="modal-kart">
-          <p>Товар добавлен в корзину!</p>
+          <h2>Товар добавлен в корзину!</h2>
           <div class="modal-kart-wrapper">
             <a class="button modal-button-order" href="#">Оформить заказ</a>
             <button class="button button-next-purchase" type="button">Продолжить покупки</button>
