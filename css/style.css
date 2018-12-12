@@ -183,6 +183,7 @@ input[type="radio"]:focus + label::before {
   left: 18px;
   top: 13px;
   background-image: url("../img/icon/icon-bookmark.svg");
+  background-repeat: no-repeat;
   opacity: 0.3;
 }
 
@@ -198,6 +199,7 @@ input[type="radio"]:focus + label::before {
   width: 15px;
   height: 15px;
   background-image: url("../img/icon/icon-cart.svg");
+  background-repeat: no-repeat;
   opacity: 0.3;
 }
 
