@@ -455,21 +455,21 @@ width: 121px;
   color: #000000;
 }
 
-.user-navigation-login:hover,
+.user-navigation-signin:hover,
 .user-navigation-registration:hover {
   color: #ee3643;
 
 }
 
-.user-navigation-login:hover .login-icon {
+.user-navigation-signin:hover .login-icon {
   fill: #32425c;
 }
 
-.user-navigation-login:focus .login-icon {
+.user-navigation-signin:focus .login-icon {
   fill: #c5c5c5;
 }
 
-.user-navigation-login:focus,
+.user-navigation-signin:focus,
 .user-navigation-registration:focus {
   background-color: #f7f9fa;
   color: rgba(0, 0, 0, 30%);
@@ -1226,8 +1226,13 @@ footer .wrapper {
   margin-bottom: 52px;
   padding: 0;
   display: flex;
+
   justify-content: flex-start;
   flex-wrap: wrap;
+}
+
+.product-catalog-wrapper .product-catalog {
+  width: 700px;
 }
 
 .popular-product-catalog {
@@ -1516,6 +1521,7 @@ footer .wrapper {
   justify-content: flex-end;
   align-items: flex-start;
   flex-wrap: wrap;
+  width: 940px;
   margin: 0;
   margin-bottom: 53px;
 }
