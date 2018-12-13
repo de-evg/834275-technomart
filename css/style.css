@@ -34,12 +34,8 @@ a {
   text-decoration: none;
 }
 
-a:hover,
-a:focus,
-button:hover,
-button:focus,
-input[type="checkbox"]:focus + label::before,
-input[type="radio"]:focus + label::before {
+input[type="checkbox"].brands-filter-checkbox:focus + label::before,
+input[type="radio"].type-filter-radio:focus + label::before {
   outline: 3px solid lightblue;
 }
 
@@ -1326,7 +1322,7 @@ footer .wrapper {
 .catalog-item:hover .buy-item,
 .popular-product-item:hover .buy-item {
   display: block;
-  z-index: 28;
+  z-index: 18;
 }
 
 .button-buy {
@@ -1359,7 +1355,7 @@ footer .wrapper {
   background-image: url("../img/icon/icon-cart.svg");
   opacity: 0.3;
   left: 10px;
-  z-index: 29;
+  z-index: 19;
 }
 
 .button-buy:hover {
@@ -1460,7 +1456,7 @@ footer .wrapper {
   right: -1px;
   background-image: url("../img/decor/new-item.png");
   background-repeat: no-repeat;
-  z-index: 23;
+  z-index: 13;
 }
 
 /*Меню пагинации*/
@@ -1831,6 +1827,7 @@ footer .wrapper {
 }
 
 .popular-brands-catalog .popular-brands-item {
+  position: relative;
   max-width: 218px;
   height: 143px;
   list-style: none;
@@ -1838,6 +1835,8 @@ footer .wrapper {
 
   margin-right: 20px;
   margin-bottom: 20px;
+  vertical-align: top;
+  background-color: #ffffff;
 }
 
 .popular-brands-catalog .popular-brands-item:nth-child(4n) {
@@ -1849,6 +1848,27 @@ footer .wrapper {
 .popular-brands-catalog .popular-brands-item:nth-last-child(3),
 .popular-brands-catalog .popular-brands-item:nth-last-child(4) {
   margin-bottom: 0;
+}
+
+.popular-brands-item a {
+  display: block;
+  vertical-align: top;
+}
+
+.popular-brands-item img {
+  display: block;
+}
+
+.popular-brand-link:hover {
+  border-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+  opacity: 0.5;
+}
+
+.popular-brand-link:focus {
+  border-color: #ffffff;
+
+  box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
 }
 
 
@@ -1932,6 +1952,12 @@ footer .wrapper {
 .credit-toggle {
   padding-top: 13px;
   padding-bottom: 16px;
+}
+
+.delivery-toggle:hover,
+.garanty-toggle:hover,
+.credit-toggle:hover {
+  background-color: #293449;
 }
 
 .services-toggle .delivery-toggle {
@@ -2135,12 +2161,16 @@ footer .wrapper {
 }
 
 .about-company .button:hover,
-.contacts .button:hover {
+.contacts .button:hover,
+.modal-message .button:hover,
+.modal-button-order:hover {
   background-color: #ca2c37;
 }
 
 .about-company .button:focus,
-.contacts .button:focus {
+.contacts .button:focus,
+.modal-message .button:focus,
+.modal-button-order:focus {
   background-color: #ba2732;
 }
 
@@ -2182,7 +2212,7 @@ footer .wrapper {
   top: 150px;
   left: 50%;
   margin-left: -310px;
-  z-index: 24;
+  z-index: 30;
   border-top: 7px solid #ee3643;
   background-color: #ffffff;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.4);
@@ -2290,7 +2320,7 @@ footer .wrapper {
   background-color: #ffffff;
 }
 
-.modal-kart p {
+.modal-kart h2 {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
@@ -2298,7 +2328,7 @@ footer .wrapper {
   padding-left: 180px;
 }
 
-.modal-kart p::before {
+.modal-kart h2::before {
   position: absolute;
   content: "";
   width: 66px;
