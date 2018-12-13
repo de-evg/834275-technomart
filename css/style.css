@@ -1548,7 +1548,6 @@ footer .wrapper {
   background-image: url("../img/icon/icon-material.svg");
   background-repeat: no-repeat;
   background-position: 213px 31px;
-  order: 1;
 }
 
 .promo-item:nth-child(2) {
@@ -1556,7 +1555,7 @@ footer .wrapper {
   background-image: url("../img/icon/icon-instrument.svg");
   background-repeat: no-repeat;
   background-position: 197px 33px;
-  order: 2;
+
 }
 
 .promo-item:nth-child(3) {
@@ -1565,19 +1564,18 @@ footer .wrapper {
   background-repeat: no-repeat;
   background-position: 191px 31px;
   margin-right: 0;
-  order: 3;
+
 }
 
-.promo-item:nth-child(4) {
+.promo-item:nth-child(5) {
   background-color: #8ed78f;
   background-image: url("../img/icon/icon-discount.svg");
   background-repeat: no-repeat;
   background-position: 196px 26px;
   margin-right: 0;
-  order: 5;
 }
 
-.promo-item:nth-child(5) {
+.promo-item:nth-child(6) {
   position: absolute;
   bottom: -1px;
   width: 300px;
@@ -1586,8 +1584,6 @@ footer .wrapper {
   background-repeat: no-repeat;
   background-position: 191px 32px;
   margin: 0;
-  order: 6;
-
 }
 
 .promo-item h3 {
@@ -1619,28 +1615,27 @@ footer .wrapper {
 }
 
 .promo-item:nth-child(3) a,
-.promo-item:nth-child(4) a,
-.promo-item:nth-child(5) a {
+.promo-item:nth-child(5) a,
+.promo-item:nth-child(6) a {
   margin-left: 1px;
 }
 
 .promo-item a:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .promo-item a:focus {
-    background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.promo-item:nth-child(6) {
+.promo-item:nth-child(4) {
   margin-bottom: 0;
   padding: 0;
   flex-basis: 620px;
   height: 265px;
-  order: 4;
 }
 
-.promo-item:nth-child(6) .promo-slider-item:first-of-type {
+.promo-item:nth-child(4) .promo-slider-item:first-of-type {
   box-sizing: border-box;
   width: 620px;
   height: 266px;
@@ -1649,7 +1644,7 @@ footer .wrapper {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-.promo-item:nth-child(6) .promo-slider-item:last-of-type {
+.promo-item:nth-child(4) .promo-slider-item:last-of-type {
   box-sizing: border-box;
   width: 620px;
   height: 265px;
