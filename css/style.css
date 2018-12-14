@@ -1581,6 +1581,7 @@ footer .wrapper {
   box-sizing: border-box;
   list-style: none;
   flex-basis: 300px;
+  width: 300px;
   margin-right: 20px;
   margin-bottom: 20px;
   padding: 20px 22px 22px;
@@ -1680,6 +1681,7 @@ footer .wrapper {
   margin-bottom: 0;
   padding: 0;
   flex-basis: 620px;
+  width: 620px;
   height: 265px;
 }
 
