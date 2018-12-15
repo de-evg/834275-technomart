@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name='format-detection', content='telephone=no'>
   <title>Техномарт - лучший интернет-магазин строительных материалов и инструментов для ремонта</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
@@ -66,21 +67,21 @@
   <main>
     <section class="container">
       <h2 class="visually-hidden">Наши предложения</h2>
-      <ul class="promo">
-        <li class="promo-item">
+      <div class="promo">
+        <div class="promo-item">
           <p class="new-item">Новинка</p>
           <h3>Материалы</h3>
           <a href="#" aria-label="Переход в каталог материалов">На любой вкус</a>
-        </li>
-        <li class="promo-item">
+        </div>
+        <div class="promo-item">
           <h3>Инструмент</h3>
           <a href="#" aria-label="Переход в каталог инструментов">На все случаи</a>
-        </li>
-        <li class="promo-item">
+        </div>
+        <div class="promo-item">
           <h3>Техника</h3>
           <a href="#" aria-label="Переход в каталог техники">Для стройки</a>
-        </li>
-        <li class="promo-item">
+        </div>
+        <div class="promo-item">
           <div class="promo-slider">
             <input id="slide-drills" class="visually-hidden" type="radio" name="toggle" checked>
             <input id="slide-perforators" class="visually-hidden" type="radio" name="toggle">
@@ -101,16 +102,18 @@
             <button class="button-back" aria-label="Предыдущий слайд"></button>
             <button class="button-next" aria-label="Следующий слайд"></button>
           </div>
-        </li>
-        <li class="promo-item">
-          <h3>Скидки 50%</h3>
-          <a href="#" aria-label="Переход в каталог товаров со скидкой">На 350 товаров</a>
-        </li>
-        <li class="promo-item">
-          <h3>Доставка</h3>
-          <a href="#" aria-label="Переход в раздел информации о доставке">Бесплатно</a>
-        </li>
-      </ul>
+        </div>
+        <div class="promo-item-wrapper">
+          <div class="promo-item">
+            <h3>Скидки 50%</h3>
+            <a href="#" aria-label="Переход в каталог товаров со скидкой">На 350 товаров</a>
+          </div>
+          <div class="promo-item">
+            <h3>Доставка</h3>
+            <a href="#" aria-label="Переход в раздел информации о доставке">Бесплатно</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="container">
@@ -271,8 +274,8 @@
     <section class="about-company">
       <h2 class="about-company-title">Компания «Техномарт»</h2>
       <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-        Техномарт работает со многими транспортными компаниями:
+      <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+         Техномарт работает со многими транспортными компаниями:
       </p>
       <ul>
         <li>Деловые линии</li>
