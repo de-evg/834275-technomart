@@ -2376,6 +2376,14 @@ footer .wrapper {
   display: block;
 }
 
+.modal-animation {
+  animation: slide 0.6s ease-out;
+}
+
+.form-error {
+  animation: shake 0.3s;
+}
+
 .company-wrapper {
   position: relative;
 }
@@ -2573,3 +2581,31 @@ footer .wrapper {
 .modal-close:hover {
   cursor: pointer;
 }
+
+
+@keyframes slide {
+  0% {
+    transform: translate(-1000px, -50%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }-
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  20% {
+    transform: translate(-55%, -50%);
+  }
+
+  40% {
+    transform: translate(-45%, -50%);
+  }
+  80% {
+    transform: translate(-55%, -50%);
+  }
+}
+
