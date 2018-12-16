@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name='format-detection', content='telephone=no'>
+  <meta name="format-detection" content="telephone=no">
   <title>Техномарт - лучший интернет-магазин строительных материалов и инструментов для ремонта</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
@@ -288,16 +288,16 @@
       <a class="map-link" href="#">
         <img src="img/content/map.jpg" width="300" height="158" alt="Магазин расположен по адресу: г.Санкт-Петербург, ул.Конюшенная, д.19/8">
       </a>
-      <a class="button" href="#">Заблудились? Напишите нам!</a>
+      <a class="button link-write-us" href="#">Заблудились? Напишите нам!</a>
     </section>
-    <section class="modal modal-map">
+    <section class="modal modal-map modal-show">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <img src="img/content/map-modal.png" width="940" height="446" alt="Магазин расположен по адресу: г.Санкт-Петербург, ул.Конюшенная, д.19/8">
+      <iframe src="https://yandex.ru/map-widget/v1/-/CBF2vKhKSC" width="940" height="446"></iframe>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
   </div>
 
-  <section class="modal modal-message">
+  <section class="modal modal-message modal-show">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form>
       <div class="modal-form-wrapper">
@@ -355,5 +355,33 @@
     </div>
   </div>
 </footer>
+  <script>
+    var write_link = document.querySelector(".link-write-us");
+    var map_link = document.querySelector(".map-link");
+    var popup_map = document.querySelector(".modal-map");
+    var popup_message = document.querySelector(".modal-message");
+    var close_popup_message = popup_message.querySelector(".modal-close");
+    var close_popup_map = popup_map.querySelector(".modal-close");
+
+    write_link.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup_message.classList.add("modal-show");
+    })
+
+    close_popup_message.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup_message.classList.remove("modal-show");
+    })
+
+    map_link.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup_map.classList.add("modal-show");
+    })
+
+    close_popup_map.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup_map.classList.remove("modal-show");
+    })
+  </script>
 </body>
 </html>

@@ -2372,6 +2372,10 @@ footer .wrapper {
   display: none;
 }
 
+.modal-show {
+  display: block;
+}
+
 .company-wrapper {
   position: relative;
 }
