@@ -355,50 +355,7 @@
     </div>
   </div>
 </footer>
-  <script>
-    var write_link = document.querySelector(".link-write-us");
-    var map_link = document.querySelector(".map-link");
-    var popup_map = document.querySelector(".modal-map");
-    var popup_message = document.querySelector(".modal-message");
-    var close_popup_message = popup_message.querySelector(".modal-close");
-    var close_popup_map = popup_map.querySelector(".modal-close");
-
-    write_link.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup_message.classList.add("modal-show");
-      popup_message.classList.add("modal-animation");
-    })
-
-    close_popup_message.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup_message.classList.remove("modal-show");
-      popup_message.classList.remove("modal-animation");
-      popup_message.classList.remove("form-error");
-    })
-
-    map_link.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup_map.classList.add("modal-show");
-    })
-
-    close_popup_map.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup_map.classList.remove("modal-show");
-    })
-
-    var form_message = popup_message.querySelector("form");
-    var user_name = form_message.querySelector("[name=user-name]");
-    var user_mail = form_message.querySelector("[name=user-mail]");
-    var user_message = form_message.querySelector("[name=user-message]");
-
-    form_message.addEventListener("submit", function(evt) {
-      if (!user_name.value || !user_mail.value || !user_message.value) {
-        evt.preventDefault();
-        popup_message.classList.remove("form-error");
-        void popup_message.offsetWidth;
-        popup_message.classList.add("form-error");
-      }
-    })
+  <script src="js/script.js">
   </script>
 </body>
 </html>

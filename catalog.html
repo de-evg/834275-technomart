@@ -301,7 +301,7 @@
     </div>
   </section>
 
-  <section class="modal modal-kart modal-show">
+  <section class="modal modal-kart">
       <h2>Товар добавлен в корзину!</h2>
       <div class="modal-kart-wrapper">
         <a class="button modal-button-order" href="#">Оформить заказ</a>
@@ -344,25 +344,7 @@
     </div>
   </div>
 </footer>
-  <script>
-    var buy_items = document.querySelectorAll(".button-buy");
-    var popup_kart = document.querySelector(".modal-kart");
-    var close_popup_kart = popup_kart.querySelector(".modal-close");
-
-    for (var i = 0; i < buy_items.length; i++) {
-      var buy_item = buy_items[i];
-      buy_item.addEventListener("click", click_on_button);
-    }
-
-     function click_on_button(evt) {
-      evt.preventDefault();
-      popup_kart.classList.add("modal-show");
-    }
-
-    close_popup_kart.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup_kart.classList.remove("modal-show");
-    })
-  </script>
+<script src="js/script.js">
+</script>
 </body>
 </html>
