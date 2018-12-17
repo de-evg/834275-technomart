@@ -2377,11 +2377,13 @@ footer .wrapper {
 }
 
 .modal-animation {
-  animation: slide 0.6s ease-out;
+  -webkit-animation: slide 0.6s ease-out;
+          animation: slide 0.6s ease-out;
 }
 
 .form-error {
-  animation: shake 0.3s;
+  -webkit-animation: shake 0.3s;
+          animation: shake 0.3s;
 }
 
 .company-wrapper {
@@ -2392,7 +2394,9 @@ footer .wrapper {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 15;
 
 }
@@ -2588,29 +2592,67 @@ footer .wrapper {
 }
 
 
-@keyframes slide {
+@-webkit-keyframes slide {
   0% {
-    transform: translate(-1000px, -50%);
+    -webkit-transform: translate(-1000px, -50%);
+            transform: translate(-1000px, -50%);
   }
 
   100% {
-    transform: translate(-50%, -50%);
-  }-
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translate(-1000px, -50%);
+            transform: translate(-1000px, -50%);
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  20% {
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
+  }
+
+  40% {
+    -webkit-transform: translate(-45%, -50%);
+            transform: translate(-45%, -50%);
+  }
+  80% {
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
+  }
 }
 
 @keyframes shake {
   0% {
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   20% {
-    transform: translate(-55%, -50%);
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
   }
 
   40% {
-    transform: translate(-45%, -50%);
+    -webkit-transform: translate(-45%, -50%);
+            transform: translate(-45%, -50%);
   }
   80% {
-    transform: translate(-55%, -50%);
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
   }
 }
-

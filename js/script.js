@@ -89,8 +89,6 @@ if (document.querySelector(".promo-slider") !== null) {
   })
 }
 
-
-
 // Скрипты для каталога
 if (document.querySelector(".modal-kart") !== null) {
   var popup_kart = document.querySelector(".modal-kart");
