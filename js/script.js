@@ -59,12 +59,12 @@ if (document.querySelector(".promo-slider") !== null) {
     evt.preventDefault();
     slide_drills.removeAttribute("checked");
     slide_perforators.setAttribute("checked", true);
-    })
+  })
   toggle_slide_2.addEventListener("click", function(evt) {
     evt.preventDefault();
     slide_perforators.removeAttribute("checked");
     slide_drills.setAttribute("checked", true);
-    })
+  })
 
   next_button.addEventListener("click", function(evt) {
     evt.preventDefault();
