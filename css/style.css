@@ -560,6 +560,8 @@ input[type="radio"].type-filter-radio:focus + label::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .main-navigation a {
@@ -604,7 +606,7 @@ input[type="radio"].type-filter-radio:focus + label::before {
 
 
 .main-navigation li:last-child a {
-  padding-right: 54px;
+  padding-right: 53px;
   padding-left: 33px;
 }
 
@@ -797,7 +799,7 @@ input[type="radio"].type-filter-radio:focus + label::before {
 
 .max-price-button {
   top: 30px;
-  right: 4px;
+  right: 40px;
 }
 
 .scale-range {
@@ -813,7 +815,7 @@ input[type="radio"].type-filter-radio:focus + label::before {
 .scale {
   width: 168px;
   height: 2px;
-  background-color: #00ca74;
+  background: linear-gradient(to right, #00ca74 0%, #00ca74 82%, #d7dcde 82%, #d7dcde 100%);
 }
 
 .min-price, .max-price {
