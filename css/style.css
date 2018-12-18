@@ -222,16 +222,6 @@ input[type="radio"].type-filter-radio:focus + label::before {
   opacity: 0.3;
 }
 
-.main-bookmark:active,
-.main-kart:active {
-  background-color: #161d29;
-}
-
-.main-bookmark:active::before,
-.main-kart:active::before {
-  opacity: 0.5;
-}
-
 .main-bookmark:hover::before,
 .main-kart:hover::before,
 .main-bookmark:focus::before,
@@ -266,6 +256,17 @@ input[type="radio"].type-filter-radio:focus + label::before {
 .main-order:focus {
   color: #ffffff;
   background-color: #212a3a;
+}
+
+.main-bookmark:active,
+.main-kart:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
+}
+
+.main-bookmark:active::before,
+.main-kart:active::before {
+  opacity: 0.5;
 }
 
 .item-in-kart {
