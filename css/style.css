@@ -600,7 +600,7 @@ input[type="radio"].type-filter-radio:focus + label::before {
 }
 
 .main-navigation li:nth-child(3) a {
-  padding-left: 24px;
+  padding-left: 23px;
 }
 
 .main-navigation li:nth-child(4) a {
@@ -628,6 +628,7 @@ input[type="radio"].type-filter-radio:focus + label::before {
 .main-navigation a:active {
   background-color: #1d2739;
   color: rgba(255, 255, 255, 0.5);
+  border-color: #1d2739;
 }
 
 /*Хлебный крошки*/
@@ -1044,14 +1045,14 @@ input[type="radio"].type-filter-radio:focus + label::before {
 
 .sorting-up path,
 .sorting-down path {
-  fill: rgba(0, 0, 0, 0.3);
+  fill: #c5c5c5;
 }
 
 .sorting-up:hover path,
 .sorting-down:hover path,
 .sorting-up:focus path,
 .sorting-down:focus path {
-  fill: #000000;
+  fill: #231f20;
 }
 
 a.sorting-active {
@@ -1171,6 +1172,7 @@ footer .wrapper {
 
 .footer-navigation-item a {
   font-family: "Cuprum", "Arial", sans-serif;
+  color: #f1f5f7;
 }
 
 .footer-navigation-item:nth-of-type(n+6) a,
@@ -1193,10 +1195,13 @@ footer .wrapper {
 }
 
 .footer-navigation-item a:active {
-  color: rgba(255, 204, 153, 0.5);
+  color: rgba(255, 209, 128, 0.5);
   text-decoration: none;
 }
 
+.footer-navigation-item:nth-of-type(-n+5) a:active {
+  color: rgba(241, 245, 247, 0.5);
+}
 
 .footer-navigation-item {
   list-style: none;
@@ -1469,7 +1474,7 @@ footer .wrapper {
   padding-bottom: 4px;
   padding-left: 30px;
   padding-right: 30px;
-  margin-bottom: 8px;
+  margin-bottom: 11px;
 
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
@@ -1539,7 +1544,7 @@ footer .wrapper {
 }
 
 .button-bookmark:active {
-  border-color: rgba(50, 66, 92, 0.3);
+  border-color: rgba(193, 168, 206, 0.3);
   color: rgba(50, 66, 92, 0.3);
 }
 
@@ -2068,7 +2073,7 @@ footer .wrapper {
 
 .popular-brand-link:active {
   border-color: #ffffff;
-  opacity: 0.5;
+  opacity: 0.3;
   -webkit-box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
           box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
 }
@@ -2087,7 +2092,6 @@ footer .wrapper {
 }
 
 .services-wrapper {
-
   padding-top: 64px;
   padding-bottom: 102px;
   background-color: #f4f7f9;
@@ -2099,7 +2103,7 @@ footer .wrapper {
 
 .services-title {
   padding-right: 540px;
-  margin-bottom: 67px;
+  margin-bottom: 68px;
 }
 
 .services-title p {
@@ -2120,7 +2124,6 @@ footer .wrapper {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 240px;
-  padding-top: 4px;
   margin-right: 77px;
 }
 
@@ -2134,37 +2137,21 @@ footer .wrapper {
   color: #ffffff;
 
   display: block;
-  padding-top: 14px;
+  padding-top: 13px;
   padding-bottom: 17px;
   padding-left: 22px;
   padding-right: 10px;
   word-break: break-all;
   background-color: #32425c;
 
-  border-top: 1px solid #4e637c;
-}
-
-.delivery-toggle {
-  padding-top: 13px;
-}
-
-.garanty-toggle {
-  padding-top: 13px;
-}
-
-.credit-toggle {
-  padding-top: 13px;
-  padding-bottom: 16px;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
 }
 
 .delivery-toggle:hover,
 .garanty-toggle:hover,
 .credit-toggle:hover {
   background-color: #293449;
-}
-
-.services-toggle .delivery-toggle {
-  border: none;
 }
 
 #delivery:checked ~ .services .delivery-toggle,
@@ -2211,7 +2198,7 @@ footer .wrapper {
   background-image: url("../img/decor/delivery.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  bottom: -102px;
+  bottom: -100px;
   right: 11px;
 }
 
@@ -2223,7 +2210,7 @@ footer .wrapper {
   background-image: url("../img/decor/garanty.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  bottom: -102px;
+  bottom: -100px;
   right: 3px;
 }
 
@@ -2235,7 +2222,7 @@ footer .wrapper {
   background-image: url("../img/decor/credit.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  bottom: -102px;
+  bottom: -100px;
   right: 0px;
 }
 
@@ -2327,7 +2314,7 @@ footer .wrapper {
   margin: 0;
   padding: 0;
   padding-left: 35px;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 }
 
 .about-company li {
@@ -2391,7 +2378,7 @@ footer .wrapper {
 
 .contacts .map-link {
  display: block;
- margin-bottom: 32px;
+ margin-bottom: 30px;
 }
 
 /*POPUP Map*/
