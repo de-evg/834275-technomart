@@ -1659,7 +1659,7 @@ footer .wrapper {
   border-color: #ee3643;
 }
 
-.pagination-item:last-child  a {
+.pagination-item:last-child a {
   width: 138px;
   text-transform: uppercase;
 }
@@ -2416,6 +2416,7 @@ footer .wrapper {
   z-index: 15;
 
 }
+
 .modal-map iframe {
   border:none;
   -webkit-box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.5);
