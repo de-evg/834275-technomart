@@ -447,7 +447,7 @@ input[type="radio"].type-filter-radio:focus + label::before {
 }
 
 .personal-account:active path {
-  fill: rgba(0, 0, 0, 0.3);
+  fill: #c5c5c5;
 }
 
 .icon-logout {
@@ -460,7 +460,7 @@ input[type="radio"].type-filter-radio:focus + label::before {
 }
 
 .icon-logout:active {
-  fill: rgba(0, 0, 0, 0.3);
+  fill: #c5c5c5;
 }
 
 .personal-account:active {
@@ -529,7 +529,7 @@ input[type="radio"].type-filter-radio:focus + label::before {
 }
 
 .user-navigation .in-account:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .user-navigation a {
@@ -1055,11 +1055,13 @@ input[type="radio"].type-filter-radio:focus + label::before {
   fill: #231f20;
 }
 
-a.sorting-active {
+.sort-button a:active {
   color: #ee3643;
+  border: none;
 }
 
-.sorting-active path {
+.sorting-up:active path,
+.sorting-down:active path {
   fill: #ee3643;
 }
 
@@ -1136,7 +1138,7 @@ footer .wrapper {
 
 .footer-contacts {
   font-size: 18px;
-  color: #ffffff;
+  color: #f1f5f7;
   width: 340px;
   text-align: left;
 
@@ -1544,7 +1546,7 @@ footer .wrapper {
 }
 
 .button-bookmark:active {
-  border-color: rgba(193, 168, 206, 0.3);
+  border-color: rgba(193, 198, 206, 0.3);
   color: rgba(50, 66, 92, 0.3);
 }
 
