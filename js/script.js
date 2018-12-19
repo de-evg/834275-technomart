@@ -77,7 +77,7 @@ if (document.querySelector(".promo-slider") !== null) {
     }
   })
 
-    back_button.addEventListener("click", function(evt) {
+  back_button.addEventListener("click", function(evt) {
     evt.preventDefault();
     if (slide_drills.checked) {
       slide_drills.removeAttribute("checked");
