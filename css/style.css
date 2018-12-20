@@ -1272,7 +1272,7 @@ input[type='radio'].type-filter-radio:focus + label::before
 .sort-button a:focus
 {
     color: #000;
-    border-bottom-style: solid;
+    border-bottom: 1px solid  #ee3643;
 }
 
 .sort-button a:nth-of-type(n+4)
@@ -1321,6 +1321,20 @@ input[type='radio'].type-filter-radio:focus + label::before
 .sorting-up:active path,
 .sorting-down:active path
 {
+    fill: #ee3643;
+}
+
+.sort-button .active-sorting
+{
+    border: none;
+    color: #ee3643;
+    fill: #ee3643;
+}
+
+ .active-sorting path
+{
+    border: none;
+    color: #ee3643;
     fill: #ee3643;
 }
 
